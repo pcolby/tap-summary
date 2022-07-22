@@ -10,6 +10,9 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
+      - name: Setup macOS
+        if: startsWith(matrix.os, 'macos')
+        run: brew install gawk
       - name: Run tests
         run: ./test/test.sh
         shell: bash
