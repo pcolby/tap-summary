@@ -1,0 +1,24 @@
+TAP version 13
+# TestGenericAccessService
+ok 1 - initTestCase()
+ok 2 - readCharacteristics()
+ok 3 - readAppearanceCharacteristic()
+ok 4 - readDeviceNameCharacteristic()
+ok 5 - appearance()
+ok 6 - deviceName()
+ok 7 - setDeviceName()
+ok 8 - parseAppearance(null)
+ok 9 - parseAppearance(short)
+ok 10 - parseAppearance(0000)
+ok 11 - parseAppearance(00FF)
+ok 12 - parseAppearance(FF00)
+ok 13 - parseAppearance(ABCD)
+ok 14 - parseAppearance(AAAA)
+ok 15 - parseAppearance(extra)
+ok 16 - characteristicRead()
+ok 17 - characteristicWritten()
+ok 18 - cleanupTestCase()
+1..18
+# tests 18
+# pass 18
+# fail 0

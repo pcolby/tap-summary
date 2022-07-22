@@ -1,0 +1,108 @@
+TAP version 13
+# TestAbstractCommand
+ok 1 - initTestCase()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 3 - supportedOptions()
+ok 4 - escapeCsvField(<empty>)
+ok 5 - escapeCsvField(abc)
+ok 6 - escapeCsvField(a,c)
+ok 7 - escapeCsvField(a"c)
+ok 8 - parseMicroValue(123us)
+ok 9 - parseMicroValue(123ms)
+ok 10 - parseMicroValue(123s)
+ok 11 - parseMicroValue(bigger)
+ok 12 - parseMicroValue(equal)
+ok 13 - parseMicroValue(smaller)
+ok 14 - parseMicroValue(123.0)
+ok 15 - parseMicroValue(1.230)
+ok 16 - parseMicroValue(123.0s)
+ok 17 - parseMicroValue(1.230s)
+ok 18 - parseMicroValue(xxx)
+ok 19 - parseMicroValue(12x)
+ok 20 - parseMilliValue(123ms)
+ok 21 - parseMilliValue(123s)
+ok 22 - parseMilliValue(bigger)
+ok 23 - parseMilliValue(equal)
+ok 24 - parseMilliValue(smaller)
+ok 25 - parseMilliValue(123.0)
+ok 26 - parseMilliValue(1.230)
+ok 27 - parseMilliValue(123.0s)
+ok 28 - parseMilliValue(1.230s)
+ok 29 - parseMilliValue(xxx)
+ok 30 - parseMilliValue(12x)
+ok 31 - parseWholeValue(123V)
+ok 32 - parseWholeValue(123KV)
+ok 33 - parseWholeValue(123MV)
+ok 34 - parseWholeValue(123)
+ok 35 - parseWholeValue(123k)
+ok 36 - parseWholeValue(123M)
+ok 37 - parseWholeValue(123.0)
+ok 38 - parseWholeValue(1.23K)
+ok 39 - parseWholeValue(1.23M)
+ok 40 - parseWholeValue(xxx)
+ok 41 - parseWholeValue(12x)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 42 - processOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 43 - processOptions_device(<empty>)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 44 - processOptions_device(valid)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 45 - processOptions_output(csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 46 - processOptions_output(cSv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 47 - processOptions_output(CSV)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 48 - processOptions_output(json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 49 - processOptions_output(jSoN)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 50 - processOptions_output(JSON)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 51 - processOptions_output(text)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 52 - processOptions_output(tExT)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 53 - processOptions_output(TEXT)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 54 - processOptions_output(<empty>)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 55 - processOptions_output(foo)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 56 - processOptions_output(bar)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 57 - processOptions_output(tsv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 58 - processOptions_timeout(1ms)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 59 - processOptions_timeout(1)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 60 - processOptions_timeout(123)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 61 - processOptions_timeout(1000)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 62 - processOptions_timeout(50ms)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 63 - processOptions_timeout(500ms)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 64 - processOptions_timeout(60s)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 65 - processOptions_timeout(-10)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 66 - processOptions_timeout(-1)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 67 - processOptions_timeout(0)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 68 - processOptions_timeout(<empty>)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 69 - processOptions_timeout(foo)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 70 - processOptions_timeout(bar)
+ok 71 - cleanupTestCase()
+1..71
+# tests 71
+# pass 71
+# fail 0

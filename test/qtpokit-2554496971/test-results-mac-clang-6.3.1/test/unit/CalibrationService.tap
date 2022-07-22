@@ -1,0 +1,19 @@
+TAP version 13
+# TestCalibrationService
+ok 1 - initTestCase()
+# qt.bluetooth.darwin: failed to init a host controller object
+# qt.bluetooth.darwin: QBluetoothAddress QBluetoothLocalDevice::address() const invalid local device
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 2 - readCharacteristics()
+ok 3 - calibrateTemperature()
+ok 4 - encodeTemperature(-123456.0)
+ok 5 - encodeTemperature(-123.456)
+ok 6 - encodeTemperature(0.0)
+ok 7 - encodeTemperature(123.456)
+ok 8 - encodeTemperature(123456.0)
+ok 9 - characteristicWritten()
+ok 10 - cleanupTestCase()
+1..10
+# tests 10
+# pass 10
+# fail 0

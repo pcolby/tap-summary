@@ -1,0 +1,59 @@
+TAP version 13
+# TestPokitDevice
+ok 1 - initTestCase()
+ok 2 - controller()
+ok 3 - controller_const()
+ok 4 - calibration()
+ok 5 - dataLogger()
+ok 6 - deviceInformation()
+ok 7 - dso()
+ok 8 - genericAccess()
+ok 9 - multimeter()
+ok 10 - status()
+ok 11 - serviceToString(CalibrationService)
+ok 12 - serviceToString(DataLoggerService)
+ok 13 - serviceToString(DsoService)
+ok 14 - serviceToString(MultimeterService)
+ok 15 - serviceToString(Status (Pokit Meter))
+ok 16 - serviceToString(Status (Pokit Pro))
+ok 17 - serviceToString(DeviceInfoService)
+ok 18 - serviceToString(GenericAccessService)
+ok 19 - charcteristicToString(CalibrationService::temperature)
+ok 20 - charcteristicToString(DataLoggerService::metadata)
+ok 21 - charcteristicToString(DataLoggerService::reading)
+ok 22 - charcteristicToString(DataLoggerService::settings)
+ok 23 - charcteristicToString(DsoService::metadata)
+ok 24 - charcteristicToString(DsoService::reading)
+ok 25 - charcteristicToString(DsoService::settings)
+ok 26 - charcteristicToString(MultimeterService::reading)
+ok 27 - charcteristicToString(MultimeterService::settings)
+ok 28 - charcteristicToString(StatusService::deviceCharacteristics)
+ok 29 - charcteristicToString(StatusService::flashLed)
+ok 30 - charcteristicToString(StatusService::name)
+ok 31 - charcteristicToString(StatusService::status)
+ok 32 - charcteristicToString(DeviceInfoService::firmwareRevision)
+ok 33 - charcteristicToString(DeviceInfoService::hardwareRevision)
+ok 34 - charcteristicToString(DeviceInfoService::manufacturerName)
+ok 35 - charcteristicToString(DeviceInfoService::modelNumber)
+ok 36 - charcteristicToString(DeviceInfoService::softwareRevision)
+ok 37 - charcteristicToString(GenericAccessService::appearance)
+ok 38 - charcteristicToString(GenericAccessService::deviceName)
+# qt.bluetooth.osx: failed to init a host controller object
+# qt.bluetooth.osx: QBluetoothAddress QBluetoothLocalDevice::address() const invalid local device
+# qt.bluetooth.osx: failed to init a host controller object
+# qt.bluetooth.osx: QBluetoothAddress QBluetoothLocalDevice::address() const invalid local device
+ok 39 - setController()
+# qt.bluetooth.osx: failed to init a host controller object
+# qt.bluetooth.osx: QBluetoothAddress QBluetoothLocalDevice::address() const invalid local device
+ok 40 - connected()
+ok 41 - connectionUpdated()
+ok 42 - disconnected()
+ok 43 - discoveryFinished()
+ok 44 - errorOccurred()
+ok 45 - serviceDiscovered()
+ok 46 - stateChanged()
+ok 47 - cleanupTestCase()
+1..47
+# tests 47
+# pass 47
+# fail 0

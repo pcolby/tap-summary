@@ -1,0 +1,78 @@
+TAP version 13
+# TestAbstractCommand
+ok 1 - initTestCase()
+# qt.bluetooth: Dummy backend running. Qt Bluetooth module is non-functional.
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+ok 4 - escapeCsvField(<empty>)
+ok 5 - escapeCsvField(abc)
+ok 6 - escapeCsvField(a,c)
+ok 7 - escapeCsvField(a"c)
+ok 8 - parseMicroValue(123us)
+ok 9 - parseMicroValue(123ms)
+ok 10 - parseMicroValue(123s)
+ok 11 - parseMicroValue(bigger)
+ok 12 - parseMicroValue(equal)
+ok 13 - parseMicroValue(smaller)
+ok 14 - parseMicroValue(123.0)
+ok 15 - parseMicroValue(1.230)
+ok 16 - parseMicroValue(123.0s)
+ok 17 - parseMicroValue(1.230s)
+ok 18 - parseMicroValue(xxx)
+ok 19 - parseMicroValue(12x)
+ok 20 - parseMilliValue(123ms)
+ok 21 - parseMilliValue(123s)
+ok 22 - parseMilliValue(bigger)
+ok 23 - parseMilliValue(equal)
+ok 24 - parseMilliValue(smaller)
+ok 25 - parseMilliValue(123.0)
+ok 26 - parseMilliValue(1.230)
+ok 27 - parseMilliValue(123.0s)
+ok 28 - parseMilliValue(1.230s)
+ok 29 - parseMilliValue(xxx)
+ok 30 - parseMilliValue(12x)
+ok 31 - parseWholeValue(123V)
+ok 32 - parseWholeValue(123KV)
+ok 33 - parseWholeValue(123MV)
+ok 34 - parseWholeValue(123)
+ok 35 - parseWholeValue(123k)
+ok 36 - parseWholeValue(123M)
+ok 37 - parseWholeValue(123.0)
+ok 38 - parseWholeValue(1.23K)
+ok 39 - parseWholeValue(1.23M)
+ok 40 - parseWholeValue(xxx)
+ok 41 - parseWholeValue(12x)
+ok 42 - processOptions()
+ok 43 - processOptions_device(<empty>)
+ok 44 - processOptions_device(valid)
+ok 45 - processOptions_output(csv)
+ok 46 - processOptions_output(cSv)
+ok 47 - processOptions_output(CSV)
+ok 48 - processOptions_output(json)
+ok 49 - processOptions_output(jSoN)
+ok 50 - processOptions_output(JSON)
+ok 51 - processOptions_output(text)
+ok 52 - processOptions_output(tExT)
+ok 53 - processOptions_output(TEXT)
+ok 54 - processOptions_output(<empty>)
+ok 55 - processOptions_output(foo)
+ok 56 - processOptions_output(bar)
+ok 57 - processOptions_output(tsv)
+ok 58 - processOptions_timeout(1ms) # SKIP This platform does not support timeout for BLE device searches.
+ok 59 - processOptions_timeout(1) # SKIP This platform does not support timeout for BLE device searches.
+ok 60 - processOptions_timeout(123) # SKIP This platform does not support timeout for BLE device searches.
+ok 61 - processOptions_timeout(1000) # SKIP This platform does not support timeout for BLE device searches.
+ok 62 - processOptions_timeout(50ms) # SKIP This platform does not support timeout for BLE device searches.
+ok 63 - processOptions_timeout(500ms) # SKIP This platform does not support timeout for BLE device searches.
+ok 64 - processOptions_timeout(60s) # SKIP This platform does not support timeout for BLE device searches.
+ok 65 - processOptions_timeout(-10) # SKIP This platform does not support timeout for BLE device searches.
+ok 66 - processOptions_timeout(-1) # SKIP This platform does not support timeout for BLE device searches.
+ok 67 - processOptions_timeout(0) # SKIP This platform does not support timeout for BLE device searches.
+ok 68 - processOptions_timeout(<empty>) # SKIP This platform does not support timeout for BLE device searches.
+ok 69 - processOptions_timeout(foo) # SKIP This platform does not support timeout for BLE device searches.
+ok 70 - processOptions_timeout(bar) # SKIP This platform does not support timeout for BLE device searches.
+ok 71 - cleanupTestCase()
+1..71
+# tests 71
+# pass 58
+# fail 0

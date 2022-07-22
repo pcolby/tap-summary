@@ -1,0 +1,9 @@
+TAP version 13
+# TestDsoCommand
+ok 1 - initTestCase()
+ok 2 - test1(example)
+ok 3 - cleanupTestCase()
+1..3
+# tests 3
+# pass 3
+# fail 0

@@ -1,0 +1,48 @@
+TAP version 13
+# TestAbstractPokitService
+ok 1 - initTestCase()
+ok 2 - autoDiscover()
+ok 3 - service()
+ok 4 - createServiceObject()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 5 - getCharacteristic()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 6 - readCharacteristic()
+ok 7 - enableCharacteristicNotificatons()
+ok 8 - disableCharacteristicNotificatons()
+ok 9 - checkSize(ok)
+ok 10 - checkSize(too-short)
+ok 11 - checkSize(long)
+ok 12 - checkSize(too-long)
+ok 13 - toHexString(empty)
+ok 14 - toHexString(ok)
+ok 15 - toHexString(just-ok)
+ok 16 - toHexString(just-over)
+ok 17 - toHexString(well-over)
+ok 18 - connected()
+ok 19 - discoveryFinished()
+ok 20 - errorOccurred()
+ok 21 - serviceDiscovered()
+ok 22 - stateChanged()
+ok 23 - characteristicRead()
+ok 24 - characteristicWritten()
+ok 25 - characteristicChanged()
+ok 26 - cleanupTestCase()
+1..26
+# tests 26
+# pass 26
+# fail 0
