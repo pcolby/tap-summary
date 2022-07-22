@@ -1,5 +1,5 @@
 # SPDX-FileCopyrightText: 2022 Paul Colby <git@colby.id.au>
-# SPDX-License-Identifier: LGPL-3.0-or-later
+# SPDX-License-Identifier: MIT
 #
 # Summarise a set of QTest TAP (Test Anything Protocol) output files as a
 # GitHub Flavored Markdown table. Typical usage is something like:
