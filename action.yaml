@@ -20,7 +20,7 @@ runs:
   steps:
     - run: |
         set -o errexit -o noclobber -o nounset -o pipefail
-        shopt -s globstar
+        [[ -z "$(shopt globstar 2> /dev/null)" ]] && echo 'Shell does not support globstar' || echo shopt -s globstar
         echo ${{ inputs.path }} '->' ${{ inputs.output }}
         gawk --file test-summary.gawk --sandbox -- ${{ inputs.path }} >> ${{ inputs.summary-file }}
       shell: bash

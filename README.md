@@ -34,6 +34,10 @@ environment variables can be used, and must be quotes or escapes are appropriate
 
 Defaults to `**/*.tap`.
 
+Note, globstars (including the default) are not supported by the (really old) Bash
+version that ships with macOS. If you want to use globstars (including the default)
+on macOS runners, then you will need to upgrade your Bash shell, eg via brew.
+
 ### `summary-file`
 
 The file to append the test summary to. Defaults to `$GITHUB_STEP_SUMMARY`.
