@@ -8,6 +8,11 @@ failures=0
 while IFS= read -d '' -r dirName; do
   echo "Test case: ${dirName##*/}"
   gawk -f "$SOURCE_DIR/../test-summary.gawk" --sandbox -- "$dirName"/*/{*.tap,test/unit/*.tap} >| "$dirName/observed.md"
-  diff --color=auto --strip-trailing-cr --unified "$dirName/expected.md" "$dirName/observed.md" || ((++failures))
+  case "$OSTYPE" in
+    darwin*) extraDiffArgs='' ;;                                 # macOS
+    msys*)   extraDiffArgs='--color=auto --strip-trailing-cr' ;; # Windows
+    *)       extraDiffArgs='--color=auto' ;;
+  esac
+  diff $extraDiffArgs --unified "$dirName/expected.md" "$dirName/observed.md" || ((++failures))
 done < <(find "$SOURCE_DIR" -maxdepth 1 -mindepth 1 -type d -print0)
 [[ "$failures" -eq 0 ]]
