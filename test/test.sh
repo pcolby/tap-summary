@@ -20,6 +20,6 @@ failures=0
 while IFS= read -d '' -r dirName; do
   echo "Test case: ${dirName##*/}"
   "$GAWK" -f "$SOURCE_DIR/../test-summary.gawk" --sandbox -- "$dirName"/**/*.tap >| "$dirName/observed.md"
-  "$DIFF" --color=auto --unified "$dirName/expected.md" "$dirName/observed.md" || ((++failures))
+  "$DIFF" --color=auto --strip-trailing-cr --unified "$dirName/expected.md" "$dirName/observed.md" || ((++failures))
 done < <("$FIND" "$SOURCE_DIR" -maxdepth 1 -mindepth 1 -type d -print0)
 [[ "$failures" -eq 0 ]]
