@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2022 Paul Colby <git@colby.id.au>
+# SPDX-License-Identifier: MIT
+
+extends: default
+
+rules:
+  # Allow just one space from content (personal preference).
+  comments:
+    min-spaces-from-content: 1
+
+  # Don't require document start markers (ie "---").
+  document-start:
+    present: false
+
+  # The world has moved on from 80-chars ;)
+  line-length:
+    max: 150
+
+  # Don't treat the top-level 'on' property as a truthy value.
+  truthy:
+    check-keys: false

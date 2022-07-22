@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2022 Paul Colby <git@colby.id.au>
+# SPDX-License-Identifier: MIT
+
+name: Summary Test Results
+
+author: Paul Colby
+
+description: Summarise TAP (Test Anything Protocol) test results
+
+inputs:
+  path:
+    required: true
+    default: '**/*.tap'
+  summary-file:
+    required: true
+    default: '"$GITHUB_STEP_SUMMARY"'
+
+runs:
+  using: composite
+  steps:
+    - run: |
+        set -o errexit -o noclobber -o nounset -o pipefail
+        shopt -s globstar
+        echo ${{ inputs.path }} '->' ${{ inputs.output }}
+        gawk --file test-summary.gawk --sandbox -- ${{ inputs.path }} >> ${{ inputs.summary-file }}
+      shell: bash
+
+branding:
+  color: green
+  icon: check
