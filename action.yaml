@@ -9,10 +9,17 @@ description: Summarise TAP (Test Anything Protocol) test results
 
 inputs:
   path:
+    description: One or more paths to TAP files
     required: true
     default: '**/*.tap'
   summary-file:
+    description: File to append TAP summary to
     required: false
+
+outputs:
+  summary-file:
+    description: File TAP summary was appended to
+    value: ${{ steps.tap.outputs.summary-file }}
 
 runs:
   using: composite
@@ -23,9 +30,11 @@ runs:
         : "${SUMMARY_FILE:=$GITHUB_STEP_SUMMARY}"
         echo ${{ inputs.path }} '->' "$SUMMARY_FILE"
         gawk --file test-summary.gawk --sandbox -- ${{ inputs.path }} >> "$SUMMARY_FILE"
+        echo "::set-output name=summary-file::$SUMMARY_FILE"
       shell: bash
       env:
         SUMMARY_FILE: ${{ inputs.summary-file }}
+      id: tap
 
 branding:
   color: green

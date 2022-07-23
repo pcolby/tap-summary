@@ -43,38 +43,43 @@ jobs:
       - name: Run default action
         if: ${{ !startsWith(matrix.os, 'macos') }}
         uses: ./
+        id: default
       - name: Check result
         if: ${{ !startsWith(matrix.os, 'macos') }}
-        run: diff --unified ./.github/workflows/expected/default.md "$GITHUB_STEP_SUMMARY"
+        run: diff --unified ./.github/workflows/expected/default.md "$SUMMARY_FILE"
         shell: bash
+        env:
+          SUMMARY_FILE: ${{ steps.default.outputs.summary-file }}
 
       - name: Reset step summary
         run: '> "$GITHUB_STEP_SUMMARY"'
         shell: bash
-      - name: Test path
+      - name: Test path input
         uses: ./
         with:
           path: >-
             ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
             ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
+        id: path
       - name: Check result
-        run: diff --unified ./.github/workflows/expected/path.md "$GITHUB_STEP_SUMMARY"
+        run: diff --unified ./.github/workflows/expected/path.md "$SUMMARY_FILE"
         shell: bash
+        env:
+          SUMMARY_FILE: ${{ steps.path.outputs.summary-file }}
 
       - name: Reset step summary
         run: '> "$GITHUB_STEP_SUMMARY"'
         shell: bash
-      - name: Test summary-file
+      - name: Test summary-file input
         uses: ./
         with:
           path: >-
             ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
             ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
-          summary-file: ${{ runner.temp }}/summary.md
+          summary-file: "$GITHUB_STEP_SUMMARY"
       - name: Check result
         run: >-
-          diff --unified ./.github/workflows/expected/path.md "$RUNNER_TEMP/summary.md"
-          [[ -e "$GITHUB_STEP_SUMMARY" && ! -s "$GITHUB_STEP_SUMMARY" ]]
+          diff --unified ./.github/workflows/expected/path.md "$GITHUB_STEP_SUMMARY"
         shell: bash
     strategy:
       matrix:
