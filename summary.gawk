@@ -7,7 +7,7 @@
 # testFoo -o foo.tap,tap -o -,txt
 # testBar -o bar.tap,tap -o -,txt
 # ...
-# gawk --file test-summary.gawk --sandbox *.tap >> $GITHUB_STEP_SUMMARY
+# gawk --file summary.gawk --sandbox *.tap >> $GITHUB_STEP_SUMMARY
 #
 
 BEGIN {

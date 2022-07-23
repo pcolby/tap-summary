@@ -7,7 +7,7 @@ set -o errexit -o noclobber -o nounset -o pipefail
 failures=0
 while IFS= read -d '' -r dirName; do
   echo "Test case: ${dirName##*/}"
-  gawk -f "$SOURCE_DIR/../test-summary.gawk" --sandbox -- "$dirName"/*/{*.tap,test/unit/*.tap} >| "$dirName/observed.md"
+  gawk -f "$SOURCE_DIR/../summary.gawk" --sandbox -- "$dirName"/*/{*.tap,test/unit/*.tap} >| "$dirName/observed.md"
   case "$OSTYPE" in
     darwin*) extraDiffArgs='' ;;                                 # macOS
     msys*)   extraDiffArgs='--color=auto --strip-trailing-cr' ;; # Windows
