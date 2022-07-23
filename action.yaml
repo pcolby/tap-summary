@@ -19,6 +19,8 @@ runs:
   using: composite
   steps:
     - run: |
+        echo "$GITHUB_STEP_SUMMARY"
+        cat '${{github.event_path}}'
         set -o errexit -o noclobber -o nounset -o pipefail
         [[ -z "$(shopt globstar 2> /dev/null)" ]] && echo 'Shell does not support globstar' || shopt -s globstar
         echo ${{ inputs.path }} '->' ${{ inputs.output }}
