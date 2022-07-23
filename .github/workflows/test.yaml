@@ -6,7 +6,7 @@ name: Automatic Tests
 on: [ push, pull_request ]
 
 jobs:
-  test:
+  test-gawk:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
@@ -16,6 +16,62 @@ jobs:
       - name: Run tests
         run: ./test/test.sh
         shell: bash
+    strategy:
+      matrix:
+        os:
+          - macos-10.15
+          - macos-11     # aka macos-latest
+          - macos-12
+          - ubuntu-18.04
+          - ubuntu-20.04 # aka ubuntu-latest
+          - ubuntu-22.04
+          - windows-2019
+          - windows-2022 # aka windows-latest
+      fail-fast: false
+
+  test-gh-action:
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup macOS
+        if: startsWith(matrix.os, 'macos')
+        run: brew install gawk
+
+      - name: Reset step summary
+        run: '> "$GITHUB_STEP_SUMMARY"'
+        shell: bash
+      - name: Run default action
+        uses: ./
+      - name: Check result
+        run: diff ./.github/workflows/expected/default.md "$GITHUB_STEP_SUMMARY"
+        shell: bash
+
+      - name: Reset step summary
+        run: '> "$GITHUB_STEP_SUMMARY"'
+        shell: bash
+      - name: Test path
+        uses: ./
+        with:
+          path: >-
+            ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
+            ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
+      - name: Check result
+        run: diff ./.github/workflows/expected/path.md "$GITHUB_STEP_SUMMARY"
+        shell: bash
+
+      - name: Reset step summary
+        run: '> "$GITHUB_STEP_SUMMARY"'
+        shell: bash
+      - name: Test summary-file
+        uses: ./
+        with:
+          summary-file: ${{ runner.temp }}/summary.md
+      - name: Check result
+        run: >-
+          diff ./.github/workflows/expected/default.md "$RUNNER_TEMP/summary.md"
+          [[ -e "$GITHUB_STEP_SUMMARY" && ! -s "$GITHUB_STEP_SUMMARY" ]]
+        shell: bash
+
     strategy:
       matrix:
         os:
