@@ -12,20 +12,20 @@ inputs:
     required: true
     default: '**/*.tap'
   summary-file:
-    required: true
-    default: '"$GITHUB_STEP_SUMMARY"'
+    required: false
 
 runs:
   using: composite
   steps:
     - run: |
-        echo "$GITHUB_STEP_SUMMARY"
-        cat '${{github.event_path}}'
         set -o errexit -o noclobber -o nounset -o pipefail
         [[ -z "$(shopt globstar 2> /dev/null)" ]] && echo 'Shell does not support globstar' || shopt -s globstar
-        echo ${{ inputs.path }} '->' ${{ inputs.output }}
-        gawk --file test-summary.gawk --sandbox -- ${{ inputs.path }} >> ${{ inputs.summary-file }}
+        : "${SUMMARY_FILE:=$GITHUB_STEP_SUMMARY}"
+        echo ${{ inputs.path }} '->' "$SUMMARY_FILE"
+        gawk --file test-summary.gawk --sandbox -- ${{ inputs.path }} >> "$SUMMARY_FILE"
       shell: bash
+      env:
+        SUMMARY_FILE: ${{ inputs.summary-file }}
 
 branding:
   color: green
