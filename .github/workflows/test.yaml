@@ -43,7 +43,7 @@ jobs:
       - name: Run default action
         uses: ./
       - name: Check result
-        run: diff ./.github/workflows/expected/default.md "$GITHUB_STEP_SUMMARY"
+        run: diff --unified ./.github/workflows/expected/default.md "$GITHUB_STEP_SUMMARY"
         shell: bash
 
       - name: Reset step summary
@@ -56,7 +56,7 @@ jobs:
             ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
             ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
       - name: Check result
-        run: diff ./.github/workflows/expected/path.md "$GITHUB_STEP_SUMMARY"
+        run: diff --unified ./.github/workflows/expected/path.md "$GITHUB_STEP_SUMMARY"
         shell: bash
 
       - name: Reset step summary
@@ -68,10 +68,9 @@ jobs:
           summary-file: ${{ runner.temp }}/summary.md
       - name: Check result
         run: >-
-          diff ./.github/workflows/expected/default.md "$RUNNER_TEMP/summary.md"
+          diff --unified ./.github/workflows/expected/default.md "$RUNNER_TEMP/summary.md"
           [[ -e "$GITHUB_STEP_SUMMARY" && ! -s "$GITHUB_STEP_SUMMARY" ]]
         shell: bash
-
     strategy:
       matrix:
         os:
