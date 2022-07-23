@@ -76,7 +76,7 @@ jobs:
           path: >-
             ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
             ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
-          summary-file: "$GITHUB_STEP_SUMMARY"
+          summary-file: ${{ env.GITHUB_STEP_SUMMARY }}
       - name: Check result
         run: >-
           diff --unified ./.github/workflows/expected/path.md "$GITHUB_STEP_SUMMARY"
