@@ -36,6 +36,10 @@ jobs:
       - name: Setup macOS
         if: startsWith(matrix.os, 'macos')
         run: brew install gawk
+      - name: Setup Windows
+        if: startsWith(matrix.os, 'windows')
+        run: echo 'EXTRA_DIFF_ARGS=--strip-trailing-cr' >> "$GITHUB_ENV"
+        shell: bash
 
       - name: Reset step summary
         run: '> "$GITHUB_STEP_SUMMARY"'
@@ -46,7 +50,7 @@ jobs:
         id: default
       - name: Check result
         if: ${{ !startsWith(matrix.os, 'macos') }}
-        run: diff --unified ./.github/workflows/expected/default.md "$SUMMARY_FILE"
+        run: diff ${EXTRA_DIFF_ARGS:-} --unified ./.github/workflows/expected/default.md "$SUMMARY_FILE"
         shell: bash
         env:
           SUMMARY_FILE: ${{ steps.default.outputs.summary-file }}
@@ -62,7 +66,7 @@ jobs:
             ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
         id: path
       - name: Check result
-        run: diff --unified ./.github/workflows/expected/path.md "$SUMMARY_FILE"
+        run: diff ${EXTRA_DIFF_ARGS:-} --unified ./.github/workflows/expected/path.md "$SUMMARY_FILE"
         shell: bash
         env:
           SUMMARY_FILE: ${{ steps.path.outputs.summary-file }}
@@ -79,7 +83,7 @@ jobs:
           summary-file: ${{ runner.temp }}/summary.md
       - name: Check result
         run: >-
-          diff --unified ./.github/workflows/expected/path.md "$RUNNER_TEMP/summary.md"
+          diff ${EXTRA_DIFF_ARGS:-} --unified ./.github/workflows/expected/path.md "$RUNNER_TEMP/summary.md"
         shell: bash
     strategy:
       matrix:
