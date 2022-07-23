@@ -41,8 +41,10 @@ jobs:
         run: '> "$GITHUB_STEP_SUMMARY"'
         shell: bash
       - name: Run default action
+        if: !startsWith(matrix.os, 'macos')
         uses: ./
       - name: Check result
+        if: !startsWith(matrix.os, 'macos')
         run: diff --unified ./.github/workflows/expected/default.md "$GITHUB_STEP_SUMMARY"
         shell: bash
 
@@ -65,10 +67,13 @@ jobs:
       - name: Test summary-file
         uses: ./
         with:
+          path: >-
+            ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
+            ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
           summary-file: ${{ runner.temp }}/summary.md
       - name: Check result
         run: >-
-          diff --unified ./.github/workflows/expected/default.md "$RUNNER_TEMP/summary.md"
+          diff --unified ./.github/workflows/expected/path.md "$RUNNER_TEMP/summary.md"
           [[ -e "$GITHUB_STEP_SUMMARY" && ! -s "$GITHUB_STEP_SUMMARY" ]]
         shell: bash
     strategy:
