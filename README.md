@@ -16,7 +16,7 @@ destination file if overridden.
 
 Note, this will use a default [`path`](#path) of `**/*.tap`, which depends on Bash's
 globstar support, which is not available on macOS's default Bash (which is really
-old). For macOs, either provide paths that don't depend on globstar, or upgrade Bash
+old). For macOS, either provide paths that don't depend on globstar, or upgrade Bash
 (eg via `brew`). This is not necessary for Linux and Windows.
 
 ## Inputs
@@ -24,7 +24,7 @@ old). For macOs, either provide paths that don't depend on globstar, or upgrade 
 ### `path`
 
 One or more paths to [TAP] files. This will undergo Bash expansion, so things like
-environment variables can be used, and must be quotes or escapes are appropriate.
+environment variables can be used, and must be quoted or escaped as appropriate.
 
 Defaults to `**/*.tap`.
 
@@ -53,7 +53,7 @@ The file to append the test summary to. Defaults to `$GITHUB_STEP_SUMMARY`.
 ### `summary-file`
 
 The file the test summary was appended to. This is mostly just for automated tests,
-where it allows the invoking job to be able to check the summary output when the
+where it allows the invoking workflow job to check the summary output when the
 input `summary-file` is defaulted.
 
 
