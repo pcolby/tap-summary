@@ -29,7 +29,7 @@ runs:
         [[ -z "$(shopt globstar 2> /dev/null)" ]] && echo 'Shell does not support globstar' || shopt -s globstar
         : "${SUMMARY_FILE:=$GITHUB_STEP_SUMMARY}"
         gawk --file "$GITHUB_ACTION_PATH/summary.gawk" --sandbox -- ${{ inputs.path }} >> "$SUMMARY_FILE"
-        echo "::set-output name=summary-file::$SUMMARY_FILE"
+        echo "{summary-file}={$SUMMARY_FILE}" >> "$GITHUB_OUTPUT"
       shell: bash
       env:
         SUMMARY_FILE: ${{ inputs.summary-file }}
