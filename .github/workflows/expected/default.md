@@ -1,6 +1,6 @@
 |       Test result       | Passed | Failed | Skipped | Test name                |
 |:------------------------|-------:|-------:|--------:|:-------------------------|
-| :heavy_check_mark: pass |   2618 |      0 |     182 | TestAbstractCommand      |
+| :heavy_check_mark: pass |   2800 |      0 |     182 | TestAbstractCommand      |
 | :heavy_check_mark: pass |   1092 |      0 |       0 | TestAbstractPokitService |
 | :heavy_check_mark: pass |    126 |      0 |       0 | TestCalibrateCommand     |
 | :heavy_check_mark: pass |    420 |      0 |       0 | TestCalibrationService   |

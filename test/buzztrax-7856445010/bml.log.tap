@@ -1,0 +1,6 @@
+ok 1 - tests/lib/bml/e-core.c:BmlCoreExamples:test_bml_setup: Passed
+ok 2 - tests/lib/bml/e-core.c:BmlCoreExamples:test_bml_finalize: Passed
+ok 3 - tests/lib/bml/e-core.c:BmlCoreExamples:test_bmln_master_info: Passed
+ok 4 - tests/lib/bml/e-core.c:BmlCoreExamples:test_bmln_open: Passed
+ok 5 - tests/lib/bml/e-class.c:BmlClassExamples:test_bmln_get_machine_info: Passed
+1..5

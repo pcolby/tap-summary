@@ -1,0 +1,7 @@
+ok 1 - tests/ui/cmd/e-cmd-application.c:BtCmdApplicationExamples:test_bt_cmd_application_create: Passed
+ok 2 - tests/ui/cmd/e-cmd-application.c:BtCmdApplicationExamples:test_bt_cmd_application_play: Passed
+ok 3 - tests/ui/cmd/e-cmd-application.c:BtCmdApplicationExamples:test_bt_cmd_application_play_two_files: Passed
+ok 4 - tests/ui/cmd/e-cmd-application.c:BtCmdApplicationExamples:test_bt_cmd_application_play_incomplete_file: Passed
+ok 5 - tests/ui/cmd/e-cmd-application.c:BtCmdApplicationExamples:test_bt_cmd_application_info: Passed
+ok 6 - tests/ui/cmd/e-cmd-application.c:BtCmdApplicationExamples:test_bt_cmd_application_info_for_incomplete_file: Passed
+1..6

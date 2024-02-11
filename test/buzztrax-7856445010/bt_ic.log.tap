@@ -1,0 +1,16 @@
+ok 1 - tests/lib/ic/e-ic.c:BticExamples:test_btic_init_no_args: Passed
+ok 2 - tests/lib/ic/e-ic.c:BticExamples:test_btic_init_nullptr_args: Passed
+ok 3 - tests/lib/ic/e-ic.c:BticExamples:test_btic_init_args: Passed
+ok 4 - tests/lib/ic/e-device.c:BticDeviceExamples:test_btic_device_lookup: Passed
+ok 5 - tests/lib/ic/e-device.c:BticDeviceExamples:test_btic_device_has_controls: Passed
+ok 6 - tests/lib/ic/e-device.c:BticDeviceExamples:test_btic_device_get_control_by_name: Passed
+ok 7 - tests/lib/ic/e-device.c:BticDeviceExamples:test_btic_device_get_control_by_id: Passed
+ok 8 - tests/lib/ic/e-learn.c:BticLearnExamples:test_btic_learn_register_control: Passed
+ok 9 - tests/lib/ic/e-learn.c:BticLearnExamples:test_btic_learn_store_controls: Passed
+ok 10 - tests/lib/ic/e-registry.c:BticRegistryExamples:test_btic_registry_create: Passed
+ok 11 - tests/lib/ic/e-registry.c:BticRegistryExamples:test_btic_registry_not_empty: Passed
+ok 12 - tests/lib/ic/e-registry.c:BticRegistryExamples:test_btic_registry_get_device_by_name: Passed
+ok 13 - tests/lib/ic/e-aseq-discoverer.c:BticAseqDiscovererExamples:test_btic_initial_aseq_device_discovered: Passed
+ok 14 - tests/lib/ic/e-aseq-discoverer.c:BticAseqDiscovererExamples:test_btic_new_aseq_device_discovered: Passed
+ok 15 - tests/lib/ic/e-aseq-discoverer.c:BticAseqDiscovererExamples:test_btic_removed_aseq_device_discovered: Passed
+1..15

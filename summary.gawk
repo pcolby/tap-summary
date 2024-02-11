@@ -16,23 +16,40 @@ BEGIN {
   maxNameLength = 0
 }
 
-FNR==2 {
-  testName = $2
-  if (length(testName) > maxNameLength)
-    maxNameLength = length(testName)
-  if (!(testName in tests)) {
-    tests[testName]["skip"] = 0
-    tests[testName]["pass"] = 0
-    tests[testName]["fail"] = 0
-  }
+# Reset the test name at the beginning of each TAP file.
+BEGINFILE {
+  testName=""
 }
 
-/^ok .*[^\\]#\s*SKIP/{
+# If we have test results, and no test name yet, default to the current TAP file name.
+/^(not )?ok .*/ && !testName {
+  setTestName(FILENAME)
+}
+
+# QtTest sets the test name on the second line of the TAP file.
+FNR==2 && NF==2 && $1=="#"  {
+  setTestName($2)
+}
+
+function setTestName(name) {
+  testName=name
+  if (length(testName) > maxNameLength)
+    maxNameLength = length(testName)
+}
+
+# Handle skipped tests.
+/^ok .*[^\\]#\s*SKIP/ {
   tests[testName]["skip"]++
 }
 
-/^#\s*(pass|fail)\s+[0-9]+$/ {
-  tests[testName][$2] += $3
+# Handle passed (but not skipped) tests.
+/^ok / && !/^ok .*[^\\]#\s*SKIP/ {
+  tests[testName]["pass"]++
+}
+
+# Handle failed tests.
+/^not ok / {
+  tests[testName]["fail"]++
 }
 
 END {
@@ -45,8 +62,7 @@ END {
     printf "| %-18s %4s | %6u | %6u | %7u | %-*s |\n",
       (tests[name]["fail"]) ? ":x:" : ":heavy_check_mark:",
       (tests[name]["fail"]) ? "fail" : "pass",
-      tests[name]["pass"] - tests[name]["skip"],
-      tests[name]["fail"], tests[name]["skip"],
+      tests[name]["pass"], tests[name]["fail"], tests[name]["skip"],
       maxNameLength, name
   }
 }
