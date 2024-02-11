@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: shellcheck --enable=all --norc bootstrap.sh
+      - run: shellcheck --enable=all --norc test/test.sh
