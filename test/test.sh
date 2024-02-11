@@ -9,7 +9,8 @@ set -o errexit -o noclobber -o nounset -o pipefail
 failures=0
 while IFS= read -d '' -r dirName; do
   echo "Test case: ${dirName##*/}"
-  readarray -td '' tapFiles < <(find "${dirName}" -name '*.tap' -type f -d -print0 || :)
+  tapFiles=()
+  while IFS='' read -r file; do tapFiles+=("${file}"); done < <(find "${dirName}" -name '*.tap' -type f -d -print || :)
   gawk -f "${SOURCE_DIR}/../summary.gawk" --sandbox -- "${tapFiles[@]}" >| "${dirName}/observed.md"
   case "${OSTYPE}" in
     darwin*) extraDiffArgs='' ;;                                 # macOS
