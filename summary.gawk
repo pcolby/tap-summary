@@ -23,7 +23,10 @@ BEGINFILE {
 
 # If we have test results, and no test name yet, default to the current TAP file name.
 /^(not )?ok .*/ && !testName {
-  setTestName(FILENAME)
+  name=FILENAME
+  sub("^.*/", "", name)
+  sub(".tap$", "", name)
+  setTestName(name)
 }
 
 # QtTest sets the test name on the second line of the TAP file.
