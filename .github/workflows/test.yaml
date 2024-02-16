@@ -64,6 +64,22 @@ jobs:
           path: >-
             ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
             ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
+        id: scalar
+      - name: Check result
+        run: diff ${EXTRA_DIFF_ARGS:-} --unified ./.github/workflows/expected/path.md "$SUMMARY_FILE"
+        shell: bash
+        env:
+          SUMMARY_FILE: ${{ steps.scalar.outputs.summary-file }}
+
+      - name: Reset step summary
+        run: '> "$GITHUB_STEP_SUMMARY"'
+        shell: bash
+      - name: Test block scalars with new lines
+        uses: ./
+        with:
+          path: |
+            ./test/qtpokit-2554496971/test-results-linux-clang/test/unit/*.tap
+            ./test/qtpokit-2554496971/test-results-linux-gcc/test/unit/*.tap
         id: path
       - name: Check result
         run: diff ${EXTRA_DIFF_ARGS:-} --unified ./.github/workflows/expected/path.md "$SUMMARY_FILE"
