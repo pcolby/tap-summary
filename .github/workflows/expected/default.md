@@ -17,7 +17,7 @@
 | :heavy_check_mark: pass |  11486 |      0 |       0 | TestDsoService           |
 | :heavy_check_mark: pass |   2084 |      0 |       0 | TestFlashLedCommand      |
 | :heavy_check_mark: pass |    756 |      0 |       0 | TestGenericAccessService |
-| :x:                fail |   4234 |    258 |      48 | TestInfoCommand          |
+| :heavy_check_mark: pass |   4234 |      0 |      48 | TestInfoCommand          |
 | :heavy_check_mark: pass |  10944 |      0 |      48 | TestLoggerFetchCommand   |
 | :heavy_check_mark: pass |   5644 |      0 |       0 | TestLoggerStartCommand   |
 | :heavy_check_mark: pass |   1550 |      0 |       0 | TestLoggerStopCommand    |

@@ -50,8 +50,13 @@ function setTestName(name) {
   tests[testName]["pass"]++
 }
 
-# Handle failed tests.
-/^not ok / {
+# Handle todo (aka expected-failure) tests.
+/^not ok .*[^\\]#\s*TODO/ {
+  tests[testName]["xfail"]++
+}
+
+# Handle failed (unexpectedly) tests.
+/^not ok / && !/^not ok .*[^\\]#\s*TODO/ {
   tests[testName]["fail"]++
 }
 

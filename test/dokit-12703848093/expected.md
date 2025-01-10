@@ -10,7 +10,7 @@
 | :heavy_check_mark: pass |  13042 |      0 |      96 | TestDsoCommand           |
 | :heavy_check_mark: pass |   7832 |      0 |       0 | TestDsoService           |
 | :heavy_check_mark: pass |   1958 |      0 |       0 | TestFlashLedCommand      |
-| :x:                fail |   4108 |    258 |      48 | TestInfoCommand          |
+| :heavy_check_mark: pass |   4108 |      0 |      48 | TestInfoCommand          |
 | :heavy_check_mark: pass |  10818 |      0 |      48 | TestLoggerFetchCommand   |
 | :heavy_check_mark: pass |   5518 |      0 |       0 | TestLoggerStartCommand   |
 | :heavy_check_mark: pass |   1424 |      0 |       0 | TestLoggerStopCommand    |
