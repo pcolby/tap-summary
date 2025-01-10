@@ -1,35 +1,35 @@
-|       Test result       | Passed | Failed | Skipped | Test name                |
-|:------------------------|-------:|-------:|--------:|:-------------------------|
-| :heavy_check_mark: pass |      5 |      0 |       0 | bml.log                  |
-| :heavy_check_mark: pass |      6 |      0 |       0 | bt_cmd.log               |
-| :x:                fail |    320 |      5 |       0 | bt_core.log              |
-| :x:                fail |      3 |    110 |       0 | bt_edit.log              |
-| :heavy_check_mark: pass |     95 |      0 |       0 | bt_gst.log               |
-| :heavy_check_mark: pass |     15 |      0 |       0 | bt_ic.log                |
-| :heavy_check_mark: pass |  16684 |      0 |     182 | TestAbstractCommand      |
-| :heavy_check_mark: pass |   6062 |      0 |     192 | TestAbstractPokitService |
-| :heavy_check_mark: pass |   4042 |      0 |       0 | TestCalibrateCommand     |
-| :heavy_check_mark: pass |   2330 |      0 |      48 | TestCalibrationService   |
-| :heavy_check_mark: pass |  13406 |      0 |       0 | TestDataLoggerService    |
-| :heavy_check_mark: pass |  22328 |      0 |      48 | TestDeviceCommand        |
-| :heavy_check_mark: pass |   3614 |      0 |       0 | TestDeviceInfoService    |
-| :heavy_check_mark: pass |  13168 |      0 |      96 | TestDsoCommand           |
-| :heavy_check_mark: pass |  11486 |      0 |       0 | TestDsoService           |
-| :heavy_check_mark: pass |   2084 |      0 |       0 | TestFlashLedCommand      |
-| :heavy_check_mark: pass |    756 |      0 |       0 | TestGenericAccessService |
-| :heavy_check_mark: pass |   4234 |      0 |      48 | TestInfoCommand          |
-| :heavy_check_mark: pass |  10944 |      0 |      48 | TestLoggerFetchCommand   |
-| :heavy_check_mark: pass |   5644 |      0 |       0 | TestLoggerStartCommand   |
-| :heavy_check_mark: pass |   1550 |      0 |       0 | TestLoggerStopCommand    |
-| :heavy_check_mark: pass |  11460 |      0 |      48 | TestMeterCommand         |
-| :heavy_check_mark: pass |  14820 |      0 |       0 | TestMultimeterService    |
-| :heavy_check_mark: pass |  10956 |      0 |      96 | TestPokitDevice          |
-| :heavy_check_mark: pass |   5094 |      0 |       0 | TestPokitDiscoveryAgent  |
-| :heavy_check_mark: pass |  12104 |      0 |       0 | TestPokitMeter           |
-| :heavy_check_mark: pass |  17978 |      0 |       0 | TestPokitPro             |
-| :heavy_check_mark: pass |  10508 |      0 |      96 | TestPokitProducts        |
-| :heavy_check_mark: pass |  64598 |      0 |      48 | TestScanCommand          |
-| :heavy_check_mark: pass |   2796 |      0 |       0 | TestSetNameCommand       |
-| :heavy_check_mark: pass |   2670 |      0 |       0 | TestSetTorchCommand      |
-| :heavy_check_mark: pass |   2672 |      0 |      96 | TestStatusCommand        |
-| :heavy_check_mark: pass |  16940 |      0 |       6 | TestStatusService        |
+|       Test result       | Passed | Failed | Skipped | To do | Test name                |
+|:------------------------|-------:|-------:|--------:|------:|:-------------------------|
+| :heavy_check_mark: pass |      5 |      0 |       0 |     0 | bml.log                  |
+| :heavy_check_mark: pass |      6 |      0 |       0 |     0 | bt_cmd.log               |
+| :x:                fail |    320 |      5 |       0 |     0 | bt_core.log              |
+| :x:                fail |      3 |    110 |       0 |     0 | bt_edit.log              |
+| :heavy_check_mark: pass |     95 |      0 |       0 |     0 | bt_gst.log               |
+| :heavy_check_mark: pass |     15 |      0 |       0 |     0 | bt_ic.log                |
+| :heavy_check_mark: pass |  16684 |      0 |     182 |     0 | TestAbstractCommand      |
+| :heavy_check_mark: pass |   6062 |      0 |     192 |     0 | TestAbstractPokitService |
+| :heavy_check_mark: pass |   4042 |      0 |       0 |     0 | TestCalibrateCommand     |
+| :heavy_check_mark: pass |   2330 |      0 |      48 |     0 | TestCalibrationService   |
+| :heavy_check_mark: pass |  13406 |      0 |       0 |     0 | TestDataLoggerService    |
+| :heavy_check_mark: pass |  22328 |      0 |      48 |     0 | TestDeviceCommand        |
+| :heavy_check_mark: pass |   3614 |      0 |       0 |     0 | TestDeviceInfoService    |
+| :heavy_check_mark: pass |  13168 |      0 |      96 |     0 | TestDsoCommand           |
+| :heavy_check_mark: pass |  11486 |      0 |       0 |     0 | TestDsoService           |
+| :heavy_check_mark: pass |   2084 |      0 |       0 |     0 | TestFlashLedCommand      |
+| :heavy_check_mark: pass |    756 |      0 |       0 |     0 | TestGenericAccessService |
+| :heavy_check_mark: pass |   4234 |      0 |      48 |   258 | TestInfoCommand          |
+| :heavy_check_mark: pass |  10944 |      0 |      48 |     0 | TestLoggerFetchCommand   |
+| :heavy_check_mark: pass |   5644 |      0 |       0 |     0 | TestLoggerStartCommand   |
+| :heavy_check_mark: pass |   1550 |      0 |       0 |     0 | TestLoggerStopCommand    |
+| :heavy_check_mark: pass |  11460 |      0 |      48 |     0 | TestMeterCommand         |
+| :heavy_check_mark: pass |  14820 |      0 |       0 |     0 | TestMultimeterService    |
+| :heavy_check_mark: pass |  10956 |      0 |      96 |     0 | TestPokitDevice          |
+| :heavy_check_mark: pass |   5094 |      0 |       0 |     0 | TestPokitDiscoveryAgent  |
+| :heavy_check_mark: pass |  12104 |      0 |       0 |     0 | TestPokitMeter           |
+| :heavy_check_mark: pass |  17978 |      0 |       0 |     0 | TestPokitPro             |
+| :heavy_check_mark: pass |  10508 |      0 |      96 |     0 | TestPokitProducts        |
+| :heavy_check_mark: pass |  64598 |      0 |      48 |     0 | TestScanCommand          |
+| :heavy_check_mark: pass |   2796 |      0 |       0 |     0 | TestSetNameCommand       |
+| :heavy_check_mark: pass |   2670 |      0 |       0 |     0 | TestSetTorchCommand      |
+| :heavy_check_mark: pass |   2672 |      0 |      96 |     0 | TestStatusCommand        |
+| :heavy_check_mark: pass |  16940 |      0 |       6 |     0 | TestStatusService        |

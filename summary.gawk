@@ -63,14 +63,14 @@ function setTestName(name) {
 END {
   nameDashes = "-"
   while (length(nameDashes) < maxNameLength) nameDashes = nameDashes "-"
-  printf "|       Test result       | Passed | Failed | Skipped | %-*s |\n", maxNameLength, "Test name"
-  printf "|:------------------------|-------:|-------:|--------:|:%*s-|\n", maxNameLength, nameDashes
+  printf "|       Test result       | Passed | Failed | Skipped | To do | %-*s |\n", maxNameLength, "Test name"
+  printf "|:------------------------|-------:|-------:|--------:|------:|:%*s-|\n", maxNameLength, nameDashes
   PROCINFO["sorted_in"] = "@ind_str_asc"
   for (name in tests) {
-    printf "| %-18s %4s | %6u | %6u | %7u | %-*s |\n",
+    printf "| %-18s %4s | %6u | %6u | %7u | %5u | %-*s |\n",
       (tests[name]["fail"]) ? ":x:" : ":heavy_check_mark:",
       (tests[name]["fail"]) ? "fail" : "pass",
-      tests[name]["pass"], tests[name]["fail"], tests[name]["skip"],
+      tests[name]["pass"], tests[name]["fail"], tests[name]["skip"], tests[name]["xfail"],
       maxNameLength, name
   }
 }
