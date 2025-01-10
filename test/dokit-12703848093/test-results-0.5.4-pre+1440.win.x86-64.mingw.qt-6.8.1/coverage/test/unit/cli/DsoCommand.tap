@@ -1,0 +1,725 @@
+TAP version 13
+# TestDsoCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Dummy backend running. Qt Bluetooth module is non-functional.
+  ...
+ok 3 - supportedOptions()
+ok 4 - processOptions(missing-required-options)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - processOptions(missing-required-mode)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 6 - processOptions(missing-required-range)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 7 - processOptions(Vdc)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 8 - processOptions(Vac)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 9 - processOptions(Adc)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 10 - processOptions(Aac)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 11 - processOptions(invalid-mode)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 12 - processOptions(invalid-range)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 13 - processOptions(trigger-level-requires-trigger-mode)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 14 - processOptions(trigger-mode-requires-trigger-level)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 15 - processOptions(free-running)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 16 - processOptions(rise)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 17 - processOptions(rising)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 18 - processOptions(fall)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 19 - processOptions(falling)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 20 - processOptions(invalid-trigger-level)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 21 - processOptions(invalid-trigger-mode)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 22 - processOptions(interval:100)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 23 - processOptions(interval:499999)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 24 - processOptions(interval:500000)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 25 - processOptions(invalid-interval)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 26 - processOptions(negative-interval)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 27 - processOptions(samples:100)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 28 - processOptions(invalid-samples)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 29 - processOptions(too-big-samples)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 30 - processOptions(possibly-too-big-samples)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 31 - processOptions(negative-samples)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 32 - getService()
+ok 33 - serviceDetailsDiscovered()
+ok 34 - settingsWritten()
+ok 35 - metadataRead()
+ok 36 - outputSamples(DC-voltage-null.csv)
+ok 37 - outputSamples(DC-voltage-null.json)
+ok 38 - outputSamples(DC-voltage-null.txt)
+ok 39 - outputSamples(DC-voltage0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 40 - outputSamples(DC-voltage0.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 41 - outputSamples(DC-voltage0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 42 - outputSamples(DC-voltage1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 43 - outputSamples(DC-voltage1.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 44 - outputSamples(DC-voltage1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 45 - outputSamples(DC-voltage2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 46 - outputSamples(DC-voltage2.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 47 - outputSamples(DC-voltage2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 48 - outputSamples(DC-voltage-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 49 - outputSamples(DC-voltage-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 50 - outputSamples(DC-voltage-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 51 - outputSamples(AC-voltage-null.csv)
+ok 52 - outputSamples(AC-voltage-null.json)
+ok 53 - outputSamples(AC-voltage-null.txt)
+ok 54 - outputSamples(AC-voltage0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 55 - outputSamples(AC-voltage0.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 56 - outputSamples(AC-voltage0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 57 - outputSamples(AC-voltage1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 58 - outputSamples(AC-voltage1.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 59 - outputSamples(AC-voltage1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 60 - outputSamples(AC-voltage2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 61 - outputSamples(AC-voltage2.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 62 - outputSamples(AC-voltage2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 63 - outputSamples(AC-voltage-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 64 - outputSamples(AC-voltage-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 65 - outputSamples(AC-voltage-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 66 - outputSamples(DC-current-null.csv)
+ok 67 - outputSamples(DC-current-null.json)
+ok 68 - outputSamples(DC-current-null.txt)
+ok 69 - outputSamples(DC-current0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 70 - outputSamples(DC-current0.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 71 - outputSamples(DC-current0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 72 - outputSamples(DC-current1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 73 - outputSamples(DC-current1.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 74 - outputSamples(DC-current1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 75 - outputSamples(DC-current2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 76 - outputSamples(DC-current2.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 77 - outputSamples(DC-current2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 78 - outputSamples(DC-current-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 79 - outputSamples(DC-current-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 80 - outputSamples(DC-current-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 81 - outputSamples(AC-current-null.csv)
+ok 82 - outputSamples(AC-current-null.json)
+ok 83 - outputSamples(AC-current-null.txt)
+ok 84 - outputSamples(AC-current0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 85 - outputSamples(AC-current0.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 86 - outputSamples(AC-current0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+  ...
+ok 87 - outputSamples(AC-current1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 88 - outputSamples(AC-current1.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 89 - outputSamples(AC-current1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 to remaining).
+  ...
+ok 90 - outputSamples(AC-current2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 91 - outputSamples(AC-current2.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 92 - outputSamples(AC-current2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 to remaining).
+  ...
+ok 93 - outputSamples(AC-current-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 94 - outputSamples(AC-current-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 95 - outputSamples(AC-current-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 to remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 to remaining).
+  ...
+ok 96 - tr()
+ok 97 - cleanupTestCase()
+1..97
+# tests 97
+# pass 97
+# fail 0

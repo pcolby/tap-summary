@@ -1,0 +1,22 @@
+TAP version 13
+# TestLoggerStopCommand
+ok 1 - initTestCase()
+ok 2 - getService()
+ok 3 - serviceDetailsDiscovered()
+ok 4 - settingsWritten(1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: Cannot find a compatible running Bluez. Please check the Bluez installation. QtBluetooth requires at least BlueZ version 5.
+    - severity: info
+      message: qt.bluetooth.bluez: Missing CAP_NET_ADMIN permission. Cannot determine whether a found address is of random or public type.
+  ...
+ok 5 - settingsWritten(1.json)
+ok 6 - settingsWritten(1.txt)
+ok 7 - tr()
+ok 8 - cleanupTestCase()
+1..8
+# tests 8
+# pass 8
+# fail 0

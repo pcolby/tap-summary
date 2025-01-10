@@ -1,0 +1,123 @@
+TAP version 13
+# TestStatusCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+ok 4 - processOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before optionNames
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+    - severity: warning
+      message: dokit.cli.command: Failed to parse device information
+  ...
+ok 7 - outputDeviceStatus(null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 8 - outputDeviceStatus(null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 9 - outputDeviceStatus(null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 10 - outputDeviceStatus(PokitMeter.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 11 - outputDeviceStatus(PokitMeter.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 12 - outputDeviceStatus(PokitMeter.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 13 - outputDeviceStatus(PokitPro.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 14 - outputDeviceStatus(PokitPro.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 15 - outputDeviceStatus(PokitPro.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+    - severity: warning
+      message: qt.bluetooth.windows: Removing client for an unknown adapter id ""
+  ...
+ok 16 - tr()
+ok 17 - cleanupTestCase()
+1..17
+# tests 17
+# pass 17
+# fail 0

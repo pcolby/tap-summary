@@ -1,0 +1,55 @@
+TAP version 13
+# TestInfoCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+ok 4 - processOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before optionNames
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered(null.csv)
+ok 7 - serviceDetailsDiscovered(null.json)
+ok 8 - serviceDetailsDiscovered(null.txt)
+ok 9 - serviceDetailsDiscovered(addr0.csv)
+ok 10 - serviceDetailsDiscovered(addr0.json)
+ok 11 - serviceDetailsDiscovered(addr0.txt)
+ok 12 - serviceDetailsDiscovered(addrMax.csv)
+ok 13 - serviceDetailsDiscovered(addrMax.json)
+ok 14 - serviceDetailsDiscovered(addrMax.txt)
+ok 15 - serviceDetailsDiscovered(addrStr.csv)
+ok 16 - serviceDetailsDiscovered(addrStr.json)
+ok 17 - serviceDetailsDiscovered(addrStr.txt)
+ok 18 - serviceDetailsDiscovered(uuid1.csv)
+ok 19 - serviceDetailsDiscovered(uuid1.json)
+ok 20 - serviceDetailsDiscovered(uuid1.txt)
+ok 21 - serviceDetailsDiscovered(uuid2.csv)
+ok 22 - serviceDetailsDiscovered(uuid2.json)
+ok 23 - serviceDetailsDiscovered(uuid2.txt)
+ok 24 - serviceDetailsDiscovered(uuid3.csv)
+ok 25 - serviceDetailsDiscovered(uuid3.json)
+ok 26 - serviceDetailsDiscovered(uuid3.txt)
+ok 27 - serviceDetailsDiscovered(rssi.csv)
+ok 28 - serviceDetailsDiscovered(rssi.json)
+ok 29 - serviceDetailsDiscovered(rssi.txt)
+ok 30 - tr()
+ok 31 - cleanupTestCase()
+1..31
+# tests 31
+# pass 31
+# fail 0

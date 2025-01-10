@@ -1,0 +1,36 @@
+TAP version 13
+# TestSetNameCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions(missing-new-name)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 5 - processOptions(empty-new-name)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 6 - processOptions(valid-new-name)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 7 - processOptions(11-char-new-name)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 8 - processOptions(12-char-new-name)
+ok 9 - getService()
+ok 10 - serviceDetailsDiscovered()
+ok 11 - deviceNameWritten(1.csv)
+ok 12 - deviceNameWritten(1.json)
+ok 13 - deviceNameWritten(1.txt)
+ok 14 - tr()
+ok 15 - cleanupTestCase()
+1..15
+# tests 15
+# pass 15
+# fail 0

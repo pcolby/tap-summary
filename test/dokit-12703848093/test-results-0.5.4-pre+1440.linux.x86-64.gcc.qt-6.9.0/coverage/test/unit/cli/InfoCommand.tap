@@ -1,0 +1,213 @@
+TAP version 13
+# TestInfoCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: Cannot find a compatible running Bluez. Please check the Bluez installation. QtBluetooth requires at least BlueZ version 5.
+    - severity: info
+      message: qt.bluetooth.bluez: Missing CAP_NET_ADMIN permission. Cannot determine whether a found address is of random or public type.
+  ...
+ok 3 - supportedOptions()
+ok 4 - processOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before optionNames
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered(null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket: "Address family not supported by protocol"
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot determine bluetoothd version and required Bluetooth HCI ioctols
+    - severity: warning
+      message: qt.bluetooth.bluez: Disabling Qt Bluetooth LE feature
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 7 - serviceDetailsDiscovered(null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 8 - serviceDetailsDiscovered(null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 9 - serviceDetailsDiscovered(addr0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 10 - serviceDetailsDiscovered(addr0.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 11 - serviceDetailsDiscovered(addr0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 12 - serviceDetailsDiscovered(addrMax.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 13 - serviceDetailsDiscovered(addrMax.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 14 - serviceDetailsDiscovered(addrMax.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 15 - serviceDetailsDiscovered(addrStr.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 16 - serviceDetailsDiscovered(addrStr.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 17 - serviceDetailsDiscovered(addrStr.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 18 - serviceDetailsDiscovered(uuid1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 19 - serviceDetailsDiscovered(uuid1.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 20 - serviceDetailsDiscovered(uuid1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 21 - serviceDetailsDiscovered(uuid2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 22 - serviceDetailsDiscovered(uuid2.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 23 - serviceDetailsDiscovered(uuid2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 24 - serviceDetailsDiscovered(uuid3.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 25 - serviceDetailsDiscovered(uuid3.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 26 - serviceDetailsDiscovered(uuid3.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 27 - serviceDetailsDiscovered(rssi.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 28 - serviceDetailsDiscovered(rssi.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 29 - serviceDetailsDiscovered(rssi.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 30 - tr()
+ok 31 - cleanupTestCase()
+1..31
+# tests 31
+# pass 31
+# fail 0

@@ -1,0 +1,23 @@
+TAP version 13
+# TestDeviceInfoService
+ok 1 - initTestCase()
+ok 2 - readCharacteristics()
+ok 3 - readFirmwareRevisionCharacteristic()
+ok 4 - readHardwareRevisionCharacteristic()
+ok 5 - readManufacturerCharacteristics()
+ok 6 - readModelNumberCharacteristic()
+ok 7 - readSoftwareRevisionCharacteristic()
+ok 8 - readSerialNumberCharacteristic()
+ok 9 - manufacturer()
+ok 10 - modelNumber()
+ok 11 - hardwareRevision()
+ok 12 - firmwareRevision()
+ok 13 - softwareRevision()
+ok 14 - serialNumber()
+ok 15 - characteristicRead()
+ok 16 - tr()
+ok 17 - cleanupTestCase()
+1..17
+# tests 17
+# pass 17
+# fail 0

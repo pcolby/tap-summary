@@ -1,0 +1,32 @@
+TAP version 13
+# TestInfoCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+ok 4 - processOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before optionNames
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered() # SKIP BLE controller operations hang on GitHub Actions's macOS 14 runners
+ok 7 - tr()
+ok 8 - cleanupTestCase()
+1..8
+# tests 8
+# pass 7
+# fail 0

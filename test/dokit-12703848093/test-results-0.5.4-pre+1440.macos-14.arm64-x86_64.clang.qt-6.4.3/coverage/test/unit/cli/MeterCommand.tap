@@ -1,0 +1,292 @@
+TAP version 13
+# TestMeterCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+ok 4 - processOptions(missing-required-mode)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - processOptions(Vdc)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 6 - processOptions(Vac)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 7 - processOptions(Adc)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 8 - processOptions(Aac)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 9 - processOptions(Resistance)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 10 - processOptions(Diode)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 11 - processOptions(Continuity)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 12 - processOptions(Temperature)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 13 - processOptions(Capacitance)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 14 - processOptions(invalid-mode)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 15 - processOptions(interval:100)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 16 - processOptions(interval:499)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 17 - processOptions(interval:500)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 18 - processOptions(invalid-interval)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 19 - processOptions(negative-interval)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 20 - processOptions(auto-range-voltage)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 21 - processOptions(auto-range-current)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 22 - processOptions(auto-range-resistance)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 23 - processOptions(auto-range-capacitance)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 24 - processOptions(invalid-range)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 25 - processOptions(rangeless-range)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+    - severity: info
+      message: dokit.cli.command: Ignoring range value: 1000
+  ...
+ok 26 - processOptions(samples:100)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 27 - processOptions(invalid-samples)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 28 - processOptions(negative-samples)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 29 - getService()
+ok 30 - serviceDetailsDiscovered()
+ok 31 - settingsWritten()
+ok 32 - outputReading() # SKIP BLE controller operations hang on GitHub Actions's macOS 14 runners
+ok 33 - tr()
+ok 34 - cleanupTestCase()
+1..34
+# tests 34
+# pass 33
+# fail 0

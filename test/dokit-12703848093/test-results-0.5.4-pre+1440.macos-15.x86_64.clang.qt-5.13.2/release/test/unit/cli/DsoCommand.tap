@@ -1,0 +1,23 @@
+TAP version 13
+# TestDsoCommand
+ok 1 - initTestCase()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 3 - supportedOptions()
+ok 4 - processOptions() # SKIP BLE controller operations hang on GitHub Actions's macOS 14 runners
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered()
+ok 7 - settingsWritten()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 8 - metadataRead()
+ok 9 - outputSamples() # SKIP BLE controller operations hang on GitHub Actions's macOS 14 runners
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 10 - tr()
+ok 11 - cleanupTestCase()
+1..11
+# tests 11
+# pass 9
+# fail 0

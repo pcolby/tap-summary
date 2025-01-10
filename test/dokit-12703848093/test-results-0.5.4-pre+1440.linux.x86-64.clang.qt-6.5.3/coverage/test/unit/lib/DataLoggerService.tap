@@ -1,0 +1,66 @@
+TAP version 13
+# TestDataLoggerService
+ok 1 - initTestCase()
+ok 2 - toString_Mode(Idle)
+ok 3 - toString_Mode(DcVoltage)
+ok 4 - toString_Mode(AcVoltage)
+ok 5 - toString_Mode(DcCurrent)
+ok 6 - toString_Mode(AcCurrent)
+ok 7 - toString_Mode(Temperature)
+ok 8 - toString_Mode(invalid)
+ok 9 - toString_Mode(max)
+ok 10 - toString_Range(Idle)
+ok 11 - toString_Range(Voltage:Meter)
+ok 12 - toString_Range(Voltage:Pro)
+ok 13 - toString_Range(Current:Meter)
+ok 14 - toString_Range(Current:Pro)
+ok 15 - toString_Range(Temperature)
+ok 16 - maxValue(Idle)
+ok 17 - maxValue(Voltage:Meter)
+ok 18 - maxValue(Voltage:Pro)
+ok 19 - maxValue(Pokit Meter)
+ok 20 - maxValue(Pokit Pro)
+ok 21 - maxValue(Temperature)
+ok 22 - readCharacteristics()
+ok 23 - readMetadataCharacteristic()
+ok 24 - setSettings()
+ok 25 - startLogger()
+ok 26 - stopLogger()
+ok 27 - fetchSamples()
+ok 28 - metadata()
+ok 29 - enableMetadataNotifications()
+ok 30 - disableMetadataNotifications()
+ok 31 - enableReadingNotifications()
+ok 32 - disableReadingNotifications()
+ok 33 - encodeSettings(stop:meter)
+ok 34 - encodeSettings(stop:pro)
+ok 35 - encodeSettings(refresh:meter)
+ok 36 - encodeSettings(refresh:pro)
+ok 37 - encodeSettings(zeroed)
+ok 38 - encodeSettings(AcVoltage)
+ok 39 - encodeSettings(reserved)
+ok 39 - parseMetadata() # Data prepared
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: Duplicate data tag PokitPro - please rename.
+  ...
+ok 40 - parseMetadata(null)
+ok 41 - parseMetadata(too-small)
+ok 42 - parseMetadata(PokitMeter)
+ok 43 - parseMetadata(PokitPro)
+ok 44 - parseMetadata(PokitPro)
+ok 45 - parseSamples(empty)
+ok 46 - parseSamples(PokitPro)
+ok 47 - parseSamples(endianness)
+ok 48 - parseSamples(odd)
+ok 49 - characteristicRead()
+ok 50 - characteristicWritten()
+ok 51 - characteristicChanged()
+ok 52 - tr()
+ok 53 - cleanupTestCase()
+1..53
+# tests 53
+# pass 53
+# fail 0

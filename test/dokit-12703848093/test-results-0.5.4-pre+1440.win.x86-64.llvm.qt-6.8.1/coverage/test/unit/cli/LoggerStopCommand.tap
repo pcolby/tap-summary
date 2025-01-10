@@ -1,0 +1,20 @@
+TAP version 13
+# TestLoggerStopCommand
+ok 1 - initTestCase()
+ok 2 - getService()
+ok 3 - serviceDetailsDiscovered()
+ok 4 - settingsWritten(1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Dummy backend running. Qt Bluetooth module is non-functional.
+  ...
+ok 5 - settingsWritten(1.json)
+ok 6 - settingsWritten(1.txt)
+ok 7 - tr()
+ok 8 - cleanupTestCase()
+1..8
+# tests 8
+# pass 8
+# fail 0

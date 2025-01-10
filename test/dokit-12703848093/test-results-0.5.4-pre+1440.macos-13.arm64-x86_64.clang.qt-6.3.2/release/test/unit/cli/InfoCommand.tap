@@ -1,0 +1,68 @@
+TAP version 13
+# TestInfoCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+# QCommandLineParser: call process() or parse() before optionNames
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions()
+ok 5 - getService()
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 6 - serviceDetailsDiscovered(null.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 7 - serviceDetailsDiscovered(null.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 8 - serviceDetailsDiscovered(null.txt)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 9 - serviceDetailsDiscovered(addr0.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 10 - serviceDetailsDiscovered(addr0.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 11 - serviceDetailsDiscovered(addr0.txt)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 12 - serviceDetailsDiscovered(addrMax.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 13 - serviceDetailsDiscovered(addrMax.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 14 - serviceDetailsDiscovered(addrMax.txt)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 15 - serviceDetailsDiscovered(addrStr.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 16 - serviceDetailsDiscovered(addrStr.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 17 - serviceDetailsDiscovered(addrStr.txt)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 18 - serviceDetailsDiscovered(uuid1.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 19 - serviceDetailsDiscovered(uuid1.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 20 - serviceDetailsDiscovered(uuid1.txt)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 21 - serviceDetailsDiscovered(uuid2.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 22 - serviceDetailsDiscovered(uuid2.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 23 - serviceDetailsDiscovered(uuid2.txt)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 24 - serviceDetailsDiscovered(uuid3.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 25 - serviceDetailsDiscovered(uuid3.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 26 - serviceDetailsDiscovered(uuid3.txt)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 27 - serviceDetailsDiscovered(rssi.csv)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 28 - serviceDetailsDiscovered(rssi.json)
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 29 - serviceDetailsDiscovered(rssi.txt)
+ok 30 - tr()
+ok 31 - cleanupTestCase()
+1..31
+# tests 31
+# pass 31
+# fail 0

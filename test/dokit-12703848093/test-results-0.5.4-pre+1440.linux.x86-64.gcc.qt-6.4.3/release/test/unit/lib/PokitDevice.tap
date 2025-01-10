@@ -1,0 +1,85 @@
+TAP version 13
+# TestPokitDevice
+ok 1 - initTestCase()
+ok 2 - controller()
+ok 3 - controller_const()
+ok 4 - calibration()
+ok 5 - dataLogger()
+ok 6 - deviceInformation()
+ok 7 - dso()
+ok 8 - multimeter()
+ok 9 - status()
+ok 10 - serviceToString(CalibrationService)
+ok 11 - serviceToString(DataLoggerService)
+ok 12 - serviceToString(DsoService)
+ok 13 - serviceToString(MultimeterService)
+ok 14 - serviceToString(Status (Pokit Meter))
+ok 15 - serviceToString(Status (Pokit Pro))
+ok 16 - serviceToString(DeviceInfoService)
+ok 17 - serviceToString(GenericAccessService)
+ok 18 - serviceToString(GenericAttribute)
+ok 19 - serviceToString(OTA Service)
+ok 20 - charcteristicToString(CalibrationService::temperature)
+ok 21 - charcteristicToString(CalibrationService::getParam)
+ok 22 - charcteristicToString(CalibrationService::setParam)
+ok 23 - charcteristicToString(DataLoggerService::metadata)
+ok 24 - charcteristicToString(DataLoggerService::reading)
+ok 25 - charcteristicToString(DataLoggerService::settings)
+ok 26 - charcteristicToString(DsoService::metadata)
+ok 27 - charcteristicToString(DsoService::reading)
+ok 28 - charcteristicToString(DsoService::settings)
+ok 29 - charcteristicToString(MultimeterService::reading)
+ok 30 - charcteristicToString(MultimeterService::settings)
+ok 31 - charcteristicToString(StatusService::deviceCharacteristics)
+ok 32 - charcteristicToString(StatusService::flashLed)
+ok 33 - charcteristicToString(StatusService::name)
+ok 34 - charcteristicToString(StatusService::status)
+ok 35 - charcteristicToString(DeviceInfoService::firmwareRevision)
+ok 36 - charcteristicToString(DeviceInfoService::hardwareRevision)
+ok 37 - charcteristicToString(DeviceInfoService::manufacturerName)
+ok 38 - charcteristicToString(DeviceInfoService::modelNumber)
+ok 39 - charcteristicToString(DeviceInfoService::softwareRevision)
+ok 40 - charcteristicToString(OTA Control)
+ok 41 - charcteristicToString(OTA Data Transfer)
+ok 42 - setController()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket: "Address family not supported by protocol"
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot determine bluetoothd version and required Bluetooth HCI ioctols
+    - severity: warning
+      message: qt.bluetooth.bluez: Disabling Qt Bluetooth LE feature
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: Cannot find a compatible running Bluez. Please check the Bluez installation. QtBluetooth requires at least BlueZ version 5.
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 43 - connected()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 44 - connectionUpdated()
+ok 45 - disconnected()
+ok 46 - discoveryFinished()
+ok 47 - errorOccurred()
+ok 48 - serviceDiscovered()
+ok 49 - stateChanged()
+ok 50 - tr()
+ok 51 - cleanupTestCase()
+1..51
+# tests 51
+# pass 51
+# fail 0

@@ -1,0 +1,46 @@
+TAP version 13
+# TestPokitDiscoveryAgent
+ok 1 - initTestCase()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 2 - cancelled()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 3 - deviceDiscovered(Pokit Meter)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 4 - deviceDiscovered(Pokit Pro)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 5 - deviceDiscovered(pokitMeter)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 6 - deviceDiscovered(pokitPro)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 7 - deviceDiscovered(null)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 8 - deviceDiscovered(random)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 9 - deviceUpdated(Pokit Meter)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 10 - deviceUpdated(Pokit Pro)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 11 - deviceUpdated(pokitMeter)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 12 - deviceUpdated(pokitPro)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 13 - deviceUpdated(null)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 14 - deviceUpdated(random)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 15 - error()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 16 - finished()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 17 - tr()
+ok 18 - cleanupTestCase()
+1..18
+# tests 18
+# pass 18
+# fail 0

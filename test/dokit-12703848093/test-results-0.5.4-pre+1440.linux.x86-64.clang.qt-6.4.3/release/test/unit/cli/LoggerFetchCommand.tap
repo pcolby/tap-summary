@@ -1,0 +1,1031 @@
+TAP version 13
+# TestLoggerFetchCommand
+ok 1 - initTestCase()
+ok 2 - getService()
+ok 3 - serviceDetailsDiscovered()
+ok 4 - metadataRead()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: Cannot find a compatible running Bluez. Please check the Bluez installation. QtBluetooth requires at least BlueZ version 5.
+    - severity: info
+      message: qt.bluetooth.bluez: Missing CAP_NET_ADMIN permission. Cannot determine whether a found address is of random or public type.
+  ...
+ok 5 - outputSamples(DC-voltage-null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket: "Address family not supported by protocol"
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot determine bluetoothd version and required Bluetooth HCI ioctols
+    - severity: warning
+      message: qt.bluetooth.bluez: Disabling Qt Bluetooth LE feature
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 6 - outputSamples(DC-voltage-null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 7 - outputSamples(DC-voltage-null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 8 - outputSamples(DC-voltage0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 9 - outputSamples(DC-voltage0.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 10 - outputSamples(DC-voltage0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 11 - outputSamples(DC-voltage1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 12 - outputSamples(DC-voltage1.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 13 - outputSamples(DC-voltage1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 14 - outputSamples(DC-voltage2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 15 - outputSamples(DC-voltage2.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 16 - outputSamples(DC-voltage2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 17 - outputSamples(DC-voltage-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 18 - outputSamples(DC-voltage-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 19 - outputSamples(DC-voltage-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 20 - outputSamples(AC-voltage-null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 21 - outputSamples(AC-voltage-null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 22 - outputSamples(AC-voltage-null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 23 - outputSamples(AC-voltage0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 24 - outputSamples(AC-voltage0.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 25 - outputSamples(AC-voltage0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 26 - outputSamples(AC-voltage1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 27 - outputSamples(AC-voltage1.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 28 - outputSamples(AC-voltage1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 29 - outputSamples(AC-voltage2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 30 - outputSamples(AC-voltage2.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 31 - outputSamples(AC-voltage2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 32 - outputSamples(AC-voltage-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 33 - outputSamples(AC-voltage-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 34 - outputSamples(AC-voltage-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 35 - outputSamples(DC-current-null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 36 - outputSamples(DC-current-null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 37 - outputSamples(DC-current-null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 38 - outputSamples(DC-current0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 39 - outputSamples(DC-current0.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 40 - outputSamples(DC-current0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 41 - outputSamples(DC-current1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 42 - outputSamples(DC-current1.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 43 - outputSamples(DC-current1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 44 - outputSamples(DC-current2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 45 - outputSamples(DC-current2.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 46 - outputSamples(DC-current2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 47 - outputSamples(DC-current-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 48 - outputSamples(DC-current-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 49 - outputSamples(DC-current-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 50 - outputSamples(AC-current-null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 51 - outputSamples(AC-current-null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 52 - outputSamples(AC-current-null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 53 - outputSamples(AC-current0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 54 - outputSamples(AC-current0.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 55 - outputSamples(AC-current0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 56 - outputSamples(AC-current1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 57 - outputSamples(AC-current1.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 58 - outputSamples(AC-current1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 59 - outputSamples(AC-current2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 60 - outputSamples(AC-current2.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 61 - outputSamples(AC-current2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 62 - outputSamples(AC-current-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 63 - outputSamples(AC-current-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 64 - outputSamples(AC-current-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 65 - outputSamples(Temperature-null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 66 - outputSamples(Temperature-null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 67 - outputSamples(Temperature-null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+  ...
+ok 68 - outputSamples(Temperature0.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 69 - outputSamples(Temperature0.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 70 - outputSamples(Temperature0.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+  ...
+ok 71 - outputSamples(Temperature1.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 72 - outputSamples(Temperature1.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 73 - outputSamples(Temperature1.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -9 remaining).
+  ...
+ok 74 - outputSamples(Temperature2.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 75 - outputSamples(Temperature2.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 76 - outputSamples(Temperature2.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -4 remaining).
+  ...
+ok 77 - outputSamples(Temperature-all.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 78 - outputSamples(Temperature-all.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 79 - outputSamples(Temperature-all.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: info
+      message: dokit.cli.command: Fetching 0 logger sample/s...
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -1 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -10 remaining).
+    - severity: info
+      message: dokit.cli.command: Finished fetching 0 sample/s (with -14 remaining).
+  ...
+ok 80 - tr()
+ok 81 - cleanupTestCase()
+1..81
+# tests 81
+# pass 81
+# fail 0

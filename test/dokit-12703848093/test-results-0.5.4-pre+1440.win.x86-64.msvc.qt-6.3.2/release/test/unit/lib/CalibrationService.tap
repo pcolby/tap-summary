@@ -1,0 +1,19 @@
+TAP version 13
+# TestCalibrationService
+ok 1 - initTestCase()
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 2 - readCharacteristics()
+ok 3 - calibrateTemperature()
+ok 4 - encodeTemperature(-123456.0)
+ok 5 - encodeTemperature(-123.456)
+ok 6 - encodeTemperature(0.0)
+ok 7 - encodeTemperature(123.456)
+ok 8 - encodeTemperature(123456.0)
+ok 9 - characteristicWritten()
+ok 10 - tr()
+ok 11 - cleanupTestCase()
+1..11
+# tests 11
+# pass 11
+# fail 0

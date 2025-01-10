@@ -1,0 +1,146 @@
+TAP version 13
+# TestMeterCommand
+ok 1 - initTestCase()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 3 - supportedOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions(missing-required-mode)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 5 - processOptions(Vdc)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 6 - processOptions(Vac)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 7 - processOptions(Adc)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 8 - processOptions(Aac)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 9 - processOptions(Resistance)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 10 - processOptions(Diode)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 11 - processOptions(Continuity)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 12 - processOptions(Temperature)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 13 - processOptions(Capacitance)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 14 - processOptions(invalid-mode)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 15 - processOptions(interval:100)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 16 - processOptions(interval:499)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 17 - processOptions(interval:500)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 18 - processOptions(invalid-interval)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 19 - processOptions(negative-interval)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 20 - processOptions(auto-range-voltage)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 21 - processOptions(auto-range-current)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 22 - processOptions(auto-range-resistance)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 23 - processOptions(auto-range-capacitance)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 24 - processOptions(invalid-range)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+# dokit.cli.command: Ignoring range value: 1000
+ok 25 - processOptions(rangeless-range)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 26 - processOptions(samples:100)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 27 - processOptions(invalid-samples)
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 28 - processOptions(negative-samples)
+ok 29 - getService()
+ok 30 - serviceDetailsDiscovered()
+ok 31 - settingsWritten()
+ok 32 - outputReading() # SKIP BLE controller operations hang on GitHub Actions's macOS 14 runners
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 33 - tr()
+ok 34 - cleanupTestCase()
+1..34
+# tests 34
+# pass 33
+# fail 0

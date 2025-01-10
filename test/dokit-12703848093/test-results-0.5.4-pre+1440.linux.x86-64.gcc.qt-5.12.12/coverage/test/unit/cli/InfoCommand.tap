@@ -1,0 +1,156 @@
+TAP version 13
+# TestInfoCommand
+ok 1 - initTestCase()
+# Cannot find a running Bluez. Please check the Bluez installation.
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+# QCommandLineParser: call process() or parse() before optionNames
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions()
+ok 5 - getService()
+# qt.bluetooth.bluez: Cannot open HCI socket: "Address family not supported by protocol"
+# qt.bluetooth.bluez: Cannot determine bluetoothd version and required Bluetooth HCI ioctols
+# qt.bluetooth.bluez: Disabling Qt Bluetooth LE feature
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 6 - serviceDetailsDiscovered(null.csv)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 7 - serviceDetailsDiscovered(null.json)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 8 - serviceDetailsDiscovered(null.txt)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 9 - serviceDetailsDiscovered(addr0.csv)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 10 - serviceDetailsDiscovered(addr0.json)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 11 - serviceDetailsDiscovered(addr0.txt)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 12 - serviceDetailsDiscovered(addrMax.csv)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 13 - serviceDetailsDiscovered(addrMax.json)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 14 - serviceDetailsDiscovered(addrMax.txt)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 15 - serviceDetailsDiscovered(addrStr.csv)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 16 - serviceDetailsDiscovered(addrStr.json)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+ok 17 - serviceDetailsDiscovered(addrStr.txt)
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 18 - serviceDetailsDiscovered(uuid1.csv) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 19 - serviceDetailsDiscovered(uuid1.json) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 20 - serviceDetailsDiscovered(uuid1.txt) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 21 - serviceDetailsDiscovered(uuid2.csv) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 22 - serviceDetailsDiscovered(uuid2.json) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 23 - serviceDetailsDiscovered(uuid2.txt) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 24 - serviceDetailsDiscovered(uuid3.csv) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 25 - serviceDetailsDiscovered(uuid3.json) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 26 - serviceDetailsDiscovered(uuid3.txt) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 27 - serviceDetailsDiscovered(rssi.csv) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 28 - serviceDetailsDiscovered(rssi.json) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+# qt.bluetooth: Using BlueZ kernel ATT interface
+# qt.bluetooth.bluez: Cannot open HCI socket
+not ok 29 - serviceDetailsDiscovered(rssi.txt) # TODO QLowEnergyController fails to track device UUIDs prior to Qt 5.14, except on macOS 13-
+  ---
+  at: TestInfoCommand::serviceDetailsDiscovered() (/home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp:120)
+  file: /home/runner/work/dokit/dokit/test/unit/cli/testinfocommand.cpp
+  line: 120
+  ...
+ok 30 - tr()
+ok 31 - cleanupTestCase()
+1..31
+# tests 31
+# pass 31
+# fail 0

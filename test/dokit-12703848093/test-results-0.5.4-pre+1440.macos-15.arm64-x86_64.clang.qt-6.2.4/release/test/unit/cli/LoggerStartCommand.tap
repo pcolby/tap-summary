@@ -1,0 +1,131 @@
+TAP version 13
+# TestLoggerStartCommand
+ok 1 - initTestCase()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 3 - supportedOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions(missing-required-options)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 5 - processOptions(missing-required-mode)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 6 - processOptions(missing-required-range)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 7 - processOptions(Vdc)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 8 - processOptions(Vac)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 9 - processOptions(Adc)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 10 - processOptions(Aac)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+# dokit.cli.command: Ignoring range value: 2A
+ok 11 - processOptions(Temperature)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+# dokit.cli.command: Ignoring range value: 10
+ok 12 - processOptions(unnecessary-range)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 13 - processOptions(invalid-mode)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 14 - processOptions(invalid-range)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 15 - processOptions(interval:100)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 16 - processOptions(interval:499)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 17 - processOptions(interval:500)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 18 - processOptions(invalid-interval)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 19 - processOptions(negative-interval)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 20 - processOptions(timestamp:0)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 21 - processOptions(timestamp:1)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 22 - processOptions(timestamp:now)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 23 - processOptions(invalid-timestamp)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 24 - processOptions(negative-timestamp)
+ok 25 - getService()
+ok 26 - serviceDetailsDiscovered()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 27 - settingsWritten(1.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 28 - settingsWritten(1.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 29 - settingsWritten(1.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 30 - tr()
+ok 31 - cleanupTestCase()
+1..31
+# tests 31
+# pass 31
+# fail 0

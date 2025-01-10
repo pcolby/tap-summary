@@ -1,0 +1,33 @@
+TAP version 13
+# TestFlashLedCommand
+ok 1 - initTestCase()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 3 - supportedOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: call process() or parse() before optionNames
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions()
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 7 - deviceLedFlashed(1.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 8 - deviceLedFlashed(1.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 9 - deviceLedFlashed(1.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 10 - tr()
+ok 11 - cleanupTestCase()
+1..11
+# tests 11
+# pass 11
+# fail 0

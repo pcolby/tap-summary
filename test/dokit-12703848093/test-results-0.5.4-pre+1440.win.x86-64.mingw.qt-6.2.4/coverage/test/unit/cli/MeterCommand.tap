@@ -1,0 +1,161 @@
+TAP version 13
+# TestMeterCommand
+ok 1 - initTestCase()
+# qt.bluetooth: Dummy backend running. Qt Bluetooth module is non-functional.
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions(missing-required-mode)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 5 - processOptions(Vdc)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 6 - processOptions(Vac)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 7 - processOptions(Adc)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 8 - processOptions(Aac)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 9 - processOptions(Resistance)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 10 - processOptions(Diode)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 11 - processOptions(Continuity)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 12 - processOptions(Temperature)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 13 - processOptions(Capacitance)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 14 - processOptions(invalid-mode)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 15 - processOptions(interval:100)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 16 - processOptions(interval:499)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 17 - processOptions(interval:500)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 18 - processOptions(invalid-interval)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 19 - processOptions(negative-interval)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 20 - processOptions(auto-range-voltage)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 21 - processOptions(auto-range-current)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 22 - processOptions(auto-range-resistance)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 23 - processOptions(auto-range-capacitance)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 24 - processOptions(invalid-range)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+# dokit.cli.command: Ignoring range value: 1000
+ok 25 - processOptions(rangeless-range)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 26 - processOptions(samples:100)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 27 - processOptions(invalid-samples)
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 28 - processOptions(negative-samples)
+ok 29 - getService()
+ok 30 - serviceDetailsDiscovered()
+ok 31 - settingsWritten()
+ok 32 - outputReading(null.csv)
+ok 33 - outputReading(null.json)
+ok 34 - outputReading(null.txt)
+ok 35 - outputReading(Idle.csv)
+ok 36 - outputReading(Idle.json)
+ok 37 - outputReading(Idle.txt)
+ok 38 - outputReading(DC-voltage.csv)
+ok 39 - outputReading(DC-voltage.json)
+ok 40 - outputReading(DC-voltage.txt)
+ok 41 - outputReading(AC-voltage.csv)
+ok 42 - outputReading(AC-voltage.json)
+ok 43 - outputReading(AC-voltage.txt)
+ok 44 - outputReading(DC-current.csv)
+ok 45 - outputReading(DC-current.json)
+ok 46 - outputReading(DC-current.txt)
+ok 47 - outputReading(AC-current.csv)
+ok 48 - outputReading(AC-current.json)
+ok 49 - outputReading(AC-current.txt)
+ok 50 - outputReading(Resistance.csv)
+ok 51 - outputReading(Resistance.json)
+ok 52 - outputReading(Resistance.txt)
+ok 53 - outputReading(Diode.csv)
+ok 54 - outputReading(Diode.json)
+ok 55 - outputReading(Diode.txt)
+ok 56 - outputReading(Continuity.csv)
+ok 57 - outputReading(Continuity.json)
+ok 58 - outputReading(Continuity.txt)
+ok 59 - outputReading(NoContinuity.csv)
+ok 60 - outputReading(NoContinuity.json)
+ok 61 - outputReading(NoContinuity.txt)
+ok 62 - outputReading(Temperature.csv)
+ok 63 - outputReading(Temperature.json)
+ok 64 - outputReading(Temperature.txt)
+ok 65 - outputReading(Capacitance.csv)
+ok 66 - outputReading(Capacitance.json)
+ok 67 - outputReading(Capacitance.txt)
+ok 68 - outputReading(Error.csv)
+ok 69 - outputReading(Error.json)
+ok 70 - outputReading(Error.txt)
+# dokit.pokit.products: Pokit Meter has no capacitance support
+ok 71 - outputReading(all.csv)
+# dokit.pokit.products: Pokit Meter has no capacitance support
+ok 72 - outputReading(all.json)
+# dokit.pokit.products: Pokit Meter has no capacitance support
+ok 73 - outputReading(all.txt)
+ok 74 - tr()
+ok 75 - cleanupTestCase()
+1..75
+# tests 75
+# pass 75
+# fail 0

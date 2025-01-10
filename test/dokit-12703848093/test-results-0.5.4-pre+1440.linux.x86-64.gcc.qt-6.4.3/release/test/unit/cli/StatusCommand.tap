@@ -1,0 +1,137 @@
+TAP version 13
+# TestStatusCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: Cannot find a compatible running Bluez. Please check the Bluez installation. QtBluetooth requires at least BlueZ version 5.
+    - severity: info
+      message: qt.bluetooth.bluez: Missing CAP_NET_ADMIN permission. Cannot determine whether a found address is of random or public type.
+  ...
+ok 3 - supportedOptions()
+ok 4 - processOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before optionNames
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: call process() or parse() before isSet
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket: "Address family not supported by protocol"
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot determine bluetoothd version and required Bluetooth HCI ioctols
+    - severity: warning
+      message: qt.bluetooth.bluez: Disabling Qt Bluetooth LE feature
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+    - severity: warning
+      message: dokit.cli.command: Failed to parse device information
+  ...
+ok 7 - outputDeviceStatus(null.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 8 - outputDeviceStatus(null.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 9 - outputDeviceStatus(null.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 10 - outputDeviceStatus(PokitMeter.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 11 - outputDeviceStatus(PokitMeter.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 12 - outputDeviceStatus(PokitMeter.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 13 - outputDeviceStatus(PokitPro.csv)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 14 - outputDeviceStatus(PokitPro.json)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 15 - outputDeviceStatus(PokitPro.txt)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Using BlueZ kernel ATT interface
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 16 - tr()
+ok 17 - cleanupTestCase()
+1..17
+# tests 17
+# pass 17
+# fail 0

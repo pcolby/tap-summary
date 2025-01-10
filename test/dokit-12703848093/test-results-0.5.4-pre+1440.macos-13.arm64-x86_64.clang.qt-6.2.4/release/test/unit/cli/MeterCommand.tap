@@ -1,0 +1,274 @@
+TAP version 13
+# TestMeterCommand
+ok 1 - initTestCase()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 3 - supportedOptions()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions(missing-required-mode)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 5 - processOptions(Vdc)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 6 - processOptions(Vac)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 7 - processOptions(Adc)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 8 - processOptions(Aac)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 9 - processOptions(Resistance)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 10 - processOptions(Diode)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 11 - processOptions(Continuity)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 12 - processOptions(Temperature)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 13 - processOptions(Capacitance)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 14 - processOptions(invalid-mode)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 15 - processOptions(interval:100)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 16 - processOptions(interval:499)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 17 - processOptions(interval:500)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 18 - processOptions(invalid-interval)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 19 - processOptions(negative-interval)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 20 - processOptions(auto-range-voltage)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 21 - processOptions(auto-range-current)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 22 - processOptions(auto-range-resistance)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 23 - processOptions(auto-range-capacitance)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 24 - processOptions(invalid-range)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+# dokit.cli.command: Ignoring range value: 1000
+ok 25 - processOptions(rangeless-range)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 26 - processOptions(samples:100)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 27 - processOptions(invalid-samples)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: option not defined: "timeout"
+ok 28 - processOptions(negative-samples)
+ok 29 - getService()
+ok 30 - serviceDetailsDiscovered()
+ok 31 - settingsWritten()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 32 - outputReading(null.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 33 - outputReading(null.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 34 - outputReading(null.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 35 - outputReading(Idle.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 36 - outputReading(Idle.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 37 - outputReading(Idle.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 38 - outputReading(DC-voltage.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 39 - outputReading(DC-voltage.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 40 - outputReading(DC-voltage.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 41 - outputReading(AC-voltage.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 42 - outputReading(AC-voltage.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 43 - outputReading(AC-voltage.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 44 - outputReading(DC-current.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 45 - outputReading(DC-current.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 46 - outputReading(DC-current.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 47 - outputReading(AC-current.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 48 - outputReading(AC-current.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 49 - outputReading(AC-current.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 50 - outputReading(Resistance.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 51 - outputReading(Resistance.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 52 - outputReading(Resistance.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 53 - outputReading(Diode.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 54 - outputReading(Diode.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 55 - outputReading(Diode.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 56 - outputReading(Continuity.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 57 - outputReading(Continuity.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 58 - outputReading(Continuity.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 59 - outputReading(NoContinuity.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 60 - outputReading(NoContinuity.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 61 - outputReading(NoContinuity.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 62 - outputReading(Temperature.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 63 - outputReading(Temperature.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 64 - outputReading(Temperature.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 65 - outputReading(Capacitance.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 66 - outputReading(Capacitance.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 67 - outputReading(Capacitance.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 68 - outputReading(Error.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 69 - outputReading(Error.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+ok 70 - outputReading(Error.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+# dokit.pokit.products: Pokit Meter has no capacitance support
+ok 71 - outputReading(all.csv)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+# dokit.pokit.products: Pokit Meter has no capacitance support
+ok 72 - outputReading(all.json)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+# qt.bluetooth.darwin: The Info.plist file is required to contain 'NSBluetoothAlwaysUsageDescription' entry
+# dokit.pokit.products: Pokit Meter has no capacitance support
+ok 73 - outputReading(all.txt)
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 74 - tr()
+ok 75 - cleanupTestCase()
+1..75
+# tests 75
+# pass 75
+# fail 0

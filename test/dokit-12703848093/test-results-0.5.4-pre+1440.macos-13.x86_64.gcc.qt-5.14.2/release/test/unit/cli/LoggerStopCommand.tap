@@ -1,0 +1,18 @@
+TAP version 13
+# TestLoggerStopCommand
+ok 1 - initTestCase()
+ok 2 - getService()
+ok 3 - serviceDetailsDiscovered()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 4 - settingsWritten(1.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 5 - settingsWritten(1.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 6 - settingsWritten(1.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 7 - tr()
+ok 8 - cleanupTestCase()
+1..8
+# tests 8
+# pass 8
+# fail 0

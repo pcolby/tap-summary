@@ -1,0 +1,31 @@
+TAP version 13
+# TestCalibrationService
+ok 1 - initTestCase()
+ok 2 - readCharacteristics()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket: "Address family not supported by protocol"
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot determine bluetoothd version and required Bluetooth HCI ioctols
+    - severity: warning
+      message: qt.bluetooth.bluez: Disabling Qt Bluetooth LE feature
+    - severity: warning
+      message: Cannot find a compatible running Bluez. Please check the Bluez installation. QtBluetooth requires at least BlueZ version 5.
+    - severity: warning
+      message: qt.bluetooth.bluez: Cannot open HCI socket
+  ...
+ok 3 - calibrateTemperature()
+ok 4 - encodeTemperature(-123456.0)
+ok 5 - encodeTemperature(-123.456)
+ok 6 - encodeTemperature(0.0)
+ok 7 - encodeTemperature(123.456)
+ok 8 - encodeTemperature(123456.0)
+ok 9 - characteristicWritten()
+ok 10 - tr()
+ok 11 - cleanupTestCase()
+1..11
+# tests 11
+# pass 11
+# fail 0

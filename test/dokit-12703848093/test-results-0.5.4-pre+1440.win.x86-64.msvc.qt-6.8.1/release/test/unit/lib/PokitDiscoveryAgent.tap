@@ -1,0 +1,24 @@
+TAP version 13
+# TestPokitDiscoveryAgent
+ok 1 - initTestCase()
+ok 2 - cancelled()
+ok 3 - deviceDiscovered(Pokit Meter)
+ok 4 - deviceDiscovered(Pokit Pro)
+ok 5 - deviceDiscovered(pokitMeter)
+ok 6 - deviceDiscovered(pokitPro)
+ok 7 - deviceDiscovered(null)
+ok 8 - deviceDiscovered(random)
+ok 9 - deviceUpdated(Pokit Meter)
+ok 10 - deviceUpdated(Pokit Pro)
+ok 11 - deviceUpdated(pokitMeter)
+ok 12 - deviceUpdated(pokitPro)
+ok 13 - deviceUpdated(null)
+ok 14 - deviceUpdated(random)
+ok 15 - error()
+ok 16 - finished()
+ok 17 - tr()
+ok 18 - cleanupTestCase()
+1..18
+# tests 18
+# pass 18
+# fail 0

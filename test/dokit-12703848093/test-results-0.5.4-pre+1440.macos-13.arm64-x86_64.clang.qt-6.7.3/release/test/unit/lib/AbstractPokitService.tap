@@ -1,0 +1,47 @@
+TAP version 13
+# TestAbstractPokitService
+ok 1 - initTestCase()
+ok 2 - autoDiscover()
+ok 3 - pokitProduct(Pokit Meter)
+ok 4 - pokitProduct(Pokit Pro)
+ok 5 - service_()
+ok 6 - createServiceObject()
+ok 7 - getCharacteristic()
+ok 8 - readCharacteristic()
+ok 9 - enableCharacteristicNotificatons()
+ok 10 - disableCharacteristicNotificatons()
+ok 11 - checkSize(ok)
+ok 12 - checkSize(too-short)
+ok 13 - checkSize(long)
+ok 14 - checkSize(too-long)
+ok 15 - toHexString(empty)
+ok 16 - toHexString(ok)
+ok 17 - toHexString(just-ok)
+ok 18 - toHexString(just-over)
+ok 19 - toHexString(well-over)
+ok 20 - connected()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: pokit.ble.service: Connected with no controller set QObject(0x0)
+  ...
+ok 21 - discoveryFinished()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: pokit.ble.service: Discovery finished, but service not found.
+  ...
+ok 22 - errorOccurred()
+ok 23 - serviceDiscovered()
+ok 24 - stateChanged()
+ok 25 - characteristicRead()
+ok 26 - characteristicWritten()
+ok 27 - characteristicChanged()
+ok 28 - tr()
+ok 29 - cleanupTestCase()
+1..29
+# tests 29
+# pass 29
+# fail 0

@@ -1,0 +1,25 @@
+TAP version 13
+# TestFlashLedCommand
+ok 1 - initTestCase()
+# Cannot find a running Bluez. Please check the Bluez installation.
+ok 2 - requiredOptions()
+ok 3 - supportedOptions()
+# QCommandLineParser: call process() or parse() before optionNames
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions()
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered()
+ok 7 - deviceLedFlashed(1.csv)
+ok 8 - deviceLedFlashed(1.json)
+ok 9 - deviceLedFlashed(1.txt)
+ok 10 - tr()
+ok 11 - cleanupTestCase()
+1..11
+# tests 11
+# pass 11
+# fail 0

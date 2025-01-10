@@ -1,0 +1,30 @@
+TAP version 13
+# TestPokitDiscoveryAgent
+ok 1 - initTestCase()
+ok 2 - cancelled()
+ok 3 - deviceDiscovered(Pokit Meter)
+ok 4 - deviceDiscovered(Pokit Pro)
+ok 5 - deviceDiscovered(pokitMeter)
+ok 6 - deviceDiscovered(pokitPro)
+ok 7 - deviceDiscovered(null)
+ok 8 - deviceDiscovered(random)
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 9 - deviceUpdated(Pokit Meter)
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 10 - deviceUpdated(Pokit Pro)
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 11 - deviceUpdated(pokitMeter)
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 12 - deviceUpdated(pokitPro)
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 13 - deviceUpdated(null)
+# QSignalSpy: Unable to handle parameter 'updatedFields' of type 'QBluetoothDeviceInfo::Fields' of method 'pokitDeviceUpdated', use qRegisterMetaType to register it.
+ok 14 - deviceUpdated(random)
+ok 15 - error()
+ok 16 - finished()
+ok 17 - tr()
+ok 18 - cleanupTestCase()
+1..18
+# tests 18
+# pass 18
+# fail 0

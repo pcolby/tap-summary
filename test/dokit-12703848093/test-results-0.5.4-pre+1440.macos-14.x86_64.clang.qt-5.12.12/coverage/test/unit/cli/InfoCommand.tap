@@ -1,0 +1,27 @@
+TAP version 13
+# TestInfoCommand
+ok 1 - initTestCase()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 3 - supportedOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: call process() or parse() before optionNames
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions()
+ok 5 - getService()
+ok 6 - serviceDetailsDiscovered() # SKIP BLE controller operations hang on GitHub Actions's macOS 14 runners
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 7 - tr()
+ok 8 - cleanupTestCase()
+1..8
+# tests 8
+# pass 7
+# fail 0

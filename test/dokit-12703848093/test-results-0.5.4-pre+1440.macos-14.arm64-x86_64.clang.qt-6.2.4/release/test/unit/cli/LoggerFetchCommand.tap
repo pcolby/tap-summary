@@ -1,0 +1,15 @@
+TAP version 13
+# TestLoggerFetchCommand
+ok 1 - initTestCase()
+ok 2 - getService()
+ok 3 - serviceDetailsDiscovered()
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 4 - metadataRead()
+ok 5 - outputSamples() # SKIP BLE controller operations hang on GitHub Actions's macOS 14 runners
+# qt.bluetooth.darwin: no default host controller or adapter is off
+ok 6 - tr()
+ok 7 - cleanupTestCase()
+1..7
+# tests 7
+# pass 6
+# fail 0

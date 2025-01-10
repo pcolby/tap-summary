@@ -1,0 +1,90 @@
+TAP version 13
+# TestPokitProducts
+ok 1 - initTestCase()
+ok 2 - toString_PokitProduct(Pokit Meter)
+ok 3 - toString_PokitProduct(Pokit Pro)
+ok 4 - toString_PokitProduct(invalid)
+ok 5 - isPokitProduct(Pokit Meter)
+ok 6 - isPokitProduct(Pokit Pro)
+ok 7 - isPokitProduct(pokitMeter)
+ok 8 - isPokitProduct(pokitPro)
+ok 9 - isPokitProduct(null)
+ok 10 - isPokitProduct(random)
+ok 11 - pokitProduct(Pokit Meter)
+ok 12 - pokitProduct(Pokit Pro)
+ok 13 - pokitProduct(pokitMeter)
+ok 14 - pokitProduct(pokitPro)
+ok 15 - pokitProduct(invalid)
+ok 16 - isPokitProduct_Uuids(Pokit Meter)
+ok 17 - isPokitProduct_Uuids(Pokit Pro)
+ok 18 - isPokitProduct_Uuids(pokitMeter)
+ok 19 - isPokitProduct_Uuids(pokitPro)
+ok 20 - isPokitProduct_Uuids(null)
+ok 21 - isPokitProduct_Uuids(random)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 22 - isPokitProduct_Controller(Pokit Meter)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 23 - isPokitProduct_Controller(Pokit Pro)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 24 - isPokitProduct_Controller(pokitMeter)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 25 - isPokitProduct_Controller(pokitPro)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 26 - isPokitProduct_Controller(null)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 27 - isPokitProduct_Controller(random)
+ok 28 - pokitProduct_Uuids(Pokit Meter)
+ok 29 - pokitProduct_Uuids(Pokit Pro)
+ok 30 - pokitProduct_Uuids(pokitMeter)
+ok 31 - pokitProduct_Uuids(pokitPro)
+ok 32 - pokitProduct_Uuids(invalid)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 33 - pokitProduct_Controller(Pokit Meter)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 34 - pokitProduct_Controller(Pokit Pro)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 35 - pokitProduct_Controller(pokitMeter)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 36 - pokitProduct_Controller(pokitPro)
+# qt.bluetooth.windows: Failed to create QBluetoothLocalDevice - no adapter found
+# qt.bluetooth.windows: Removing client for an unknown adapter id ""
+ok 37 - pokitProduct_Controller(invalid)
+ok 38 - toString_Capacitance(Pokit Meter)
+ok 39 - toString_Capacitance(Pokit Pro)
+ok 40 - toString_Capacitance(invalid)
+ok 41 - maxValue_Capacitance(Pokit Meter)
+ok 42 - maxValue_Capacitance(Pokit Pro)
+ok 43 - maxValue_Capacitance(invalid)
+ok 44 - toString_Current(Pokit Meter)
+ok 45 - toString_Current(Pokit Pro)
+ok 46 - toString_Current(invalid)
+ok 47 - maxValue_Current(Pokit Meter)
+ok 48 - maxValue_Current(Pokit Pro)
+ok 49 - maxValue_Current(invalid)
+ok 50 - toString_Resistance(Pokit Meter)
+ok 51 - toString_Resistance(Pokit Pro)
+ok 52 - toString_Resistance(invalid)
+ok 53 - maxValue_Resistance(Pokit Meter)
+ok 54 - maxValue_Resistance(Pokit Pro)
+ok 55 - maxValue_Resistance(invalid)
+ok 56 - toString_Voltage(Pokit Meter)
+ok 57 - toString_Voltage(Pokit Pro)
+ok 58 - toString_Voltage(invalid)
+ok 59 - maxValue_Voltage(Pokit Meter)
+ok 60 - maxValue_Voltage(Pokit Pro)
+ok 61 - maxValue_Voltage(invalid)
+ok 62 - cleanupTestCase()
+1..62
+# tests 62
+# pass 62
+# fail 0

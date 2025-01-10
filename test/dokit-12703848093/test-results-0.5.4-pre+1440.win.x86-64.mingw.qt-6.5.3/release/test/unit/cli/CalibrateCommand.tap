@@ -1,0 +1,154 @@
+TAP version 13
+# TestCalibrateCommand
+ok 1 - initTestCase()
+ok 2 - requiredOptions()
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: qt.bluetooth: Dummy backend running. Qt Bluetooth module is non-functional.
+  ...
+ok 3 - supportedOptions()
+ok 4 - processOptions(missing)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 5 - processOptions(1)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 6 - processOptions(1.0)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 7 - processOptions(123)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 8 - processOptions(-12)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 9 - processOptions(0)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 10 - processOptions(0.0)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 11 - processOptions(0.000)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 12 - processOptions(0.001)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 13 - processOptions(empty)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 14 - processOptions(extraneous)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 15 - processOptions(invalid)
+  ---
+  extensions:
+    messages:
+    - severity: warning
+      message: QCommandLineParser: option not defined: "device"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "output"
+    - severity: warning
+      message: QCommandLineParser: option not defined: "timeout"
+  ...
+ok 16 - getService()
+ok 17 - serviceDetailsDiscovered()
+ok 18 - temperatureCalibrated(1.csv)
+ok 19 - temperatureCalibrated(1.json)
+ok 20 - temperatureCalibrated(1.txt)
+ok 21 - tr()
+ok 22 - cleanupTestCase()
+1..22
+# tests 22
+# pass 22
+# fail 0

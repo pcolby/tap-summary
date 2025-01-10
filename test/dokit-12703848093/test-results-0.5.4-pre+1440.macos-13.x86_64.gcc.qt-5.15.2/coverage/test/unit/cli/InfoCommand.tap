@@ -1,0 +1,74 @@
+TAP version 13
+# TestInfoCommand
+ok 1 - initTestCase()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 3 - supportedOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: call process() or parse() before optionNames
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions()
+ok 5 - getService()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 6 - serviceDetailsDiscovered(null.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 7 - serviceDetailsDiscovered(null.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 8 - serviceDetailsDiscovered(null.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 9 - serviceDetailsDiscovered(addr0.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 10 - serviceDetailsDiscovered(addr0.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 11 - serviceDetailsDiscovered(addr0.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 12 - serviceDetailsDiscovered(addrMax.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 13 - serviceDetailsDiscovered(addrMax.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 14 - serviceDetailsDiscovered(addrMax.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 15 - serviceDetailsDiscovered(addrStr.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 16 - serviceDetailsDiscovered(addrStr.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 17 - serviceDetailsDiscovered(addrStr.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 18 - serviceDetailsDiscovered(uuid1.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 19 - serviceDetailsDiscovered(uuid1.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 20 - serviceDetailsDiscovered(uuid1.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 21 - serviceDetailsDiscovered(uuid2.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 22 - serviceDetailsDiscovered(uuid2.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 23 - serviceDetailsDiscovered(uuid2.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 24 - serviceDetailsDiscovered(uuid3.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 25 - serviceDetailsDiscovered(uuid3.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 26 - serviceDetailsDiscovered(uuid3.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 27 - serviceDetailsDiscovered(rssi.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 28 - serviceDetailsDiscovered(rssi.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 29 - serviceDetailsDiscovered(rssi.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 30 - tr()
+ok 31 - cleanupTestCase()
+1..31
+# tests 31
+# pass 31
+# fail 0

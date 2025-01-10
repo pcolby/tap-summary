@@ -1,0 +1,47 @@
+TAP version 13
+# TestStatusCommand
+ok 1 - initTestCase()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 2 - requiredOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 3 - supportedOptions()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# QCommandLineParser: call process() or parse() before optionNames
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "device"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "output"
+# QCommandLineParser: call process() or parse() before isSet
+# QCommandLineParser: option not defined: "timeout"
+ok 4 - processOptions()
+ok 5 - getService()
+# qt.bluetooth.osx: no default host controller or adapter is off
+# dokit.cli.command: Failed to parse device information
+ok 6 - serviceDetailsDiscovered()
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 7 - outputDeviceStatus(null.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 8 - outputDeviceStatus(null.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 9 - outputDeviceStatus(null.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 10 - outputDeviceStatus(PokitMeter.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 11 - outputDeviceStatus(PokitMeter.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 12 - outputDeviceStatus(PokitMeter.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 13 - outputDeviceStatus(PokitPro.csv)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 14 - outputDeviceStatus(PokitPro.json)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 15 - outputDeviceStatus(PokitPro.txt)
+# qt.bluetooth.osx: no default host controller or adapter is off
+ok 16 - tr()
+ok 17 - cleanupTestCase()
+1..17
+# tests 17
+# pass 17
+# fail 0
