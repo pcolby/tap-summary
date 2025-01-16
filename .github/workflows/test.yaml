@@ -24,7 +24,9 @@ jobs:
           - macos-15
           - ubuntu-20.04
           - ubuntu-22.04
+          - ubuntu-22.04-arm
           - ubuntu-24.04
+          - ubuntu-24.04-arm
           - windows-2019
           - windows-2022
       fail-fast: false
@@ -109,7 +111,9 @@ jobs:
           - macos-15
           - ubuntu-20.04
           - ubuntu-22.04
+          - ubuntu-22.04-arm
           - ubuntu-24.04
+          - ubuntu-24.04-arm
           - windows-2019
           - windows-2022
       fail-fast: false
