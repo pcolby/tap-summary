@@ -1,0 +1,6 @@
+globs:
+  - '**/*.md'
+
+ignores:
+  - .github/workflows/expected/*.md
+  - test/*/*.md

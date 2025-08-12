@@ -56,5 +56,4 @@ The file the test summary was appended to. This is mostly just for automated tes
 where it allows the invoking workflow job to check the summary output when the
 input `summary-file` is defaulted.
 
-
 [TAP]: https://testanything.org/ "Test Anything Protocol"
