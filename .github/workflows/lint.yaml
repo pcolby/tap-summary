@@ -6,10 +6,13 @@ name: Lint Checks
 on: [push, pull_request]
 
 jobs:
-  shellcheck:
+  lint:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
-      - run: npm install markdownlint-cli2 --global && markdownlint-cli2
-      - run: find -name '*.sh' -execdir shellcheck --check-sourced --enable=all --external-sources --norc {} +
-      - run: yamllint --strict .
+      - name: Check Markdown files
+        run: npm install markdownlint-cli2 --global && markdownlint-cli2
+      - name: Check shell scripts
+        run: find -name '*.sh' -execdir shellcheck --check-sourced --enable=all --external-sources --norc {} +
+      - name: Check YAML files
+        run: yamllint --strict .
