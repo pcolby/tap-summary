@@ -9,7 +9,7 @@ jobs:
   test-gawk:
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup macOS
         if: startsWith(matrix.os, 'macos')
         run: brew install gawk
@@ -34,7 +34,7 @@ jobs:
   test-gh-action:
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup macOS
         if: startsWith(matrix.os, 'macos')
         run: brew install gawk
