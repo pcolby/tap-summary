@@ -9,7 +9,7 @@ jobs:
   test-gawk:
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup macOS
         if: startsWith(matrix.os, 'macos')
         run: brew install gawk
@@ -20,21 +20,23 @@ jobs:
       matrix:
         os:
           - macos-13
+          - macos-13-arm64
           - macos-14
+          - macos-14-arm64
           - macos-15
-          - ubuntu-20.04
+          - macos-15-arm64
           - ubuntu-22.04
           - ubuntu-22.04-arm
           - ubuntu-24.04
           - ubuntu-24.04-arm
-          - windows-2019
           - windows-2022
+          - windows-2025
       fail-fast: false
 
   test-gh-action:
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup macOS
         if: startsWith(matrix.os, 'macos')
         run: brew install gawk
@@ -107,13 +109,15 @@ jobs:
       matrix:
         os:
           - macos-13
+          - macos-13-arm64
           - macos-14
+          - macos-14-arm64
           - macos-15
-          - ubuntu-20.04
+          - macos-15-arm64
           - ubuntu-22.04
           - ubuntu-22.04-arm
           - ubuntu-24.04
           - ubuntu-24.04-arm
-          - windows-2019
           - windows-2022
+          - windows-2025
       fail-fast: false
