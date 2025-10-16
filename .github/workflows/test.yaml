@@ -16,7 +16,7 @@ jobs:
       - name: Run tests
         run: ./test/test.sh
         shell: bash
-    strategy:
+    strategy: &strategy
       matrix:
         os:
           - macos-14
@@ -103,17 +103,4 @@ jobs:
         run: >-
           diff ${EXTRA_DIFF_ARGS:-} --unified ./.github/workflows/expected/path.md "$RUNNER_TEMP/summary.md"
         shell: bash
-    strategy:
-      matrix:
-        os:
-          - macos-14
-          - macos-15
-          - macos-26
-          - ubuntu-22.04
-          - ubuntu-22.04-arm
-          - ubuntu-24.04
-          - ubuntu-24.04-arm
-          - windows-11-arm
-          - windows-2022
-          - windows-2025
-      fail-fast: false
+    strategy: *strategy
