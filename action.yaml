@@ -26,11 +26,12 @@ runs:
   steps:
     - run: |
         set -o errexit -o noclobber -o nounset -o pipefail
-        [[ -z "$(shopt globstar 2> /dev/null)" ]] && echo 'Shell does not support globstar' || shopt -s globstar
-        : "${SUMMARY_FILE:=$GITHUB_STEP_SUMMARY}"
+        if [[ -n "$(shopt globstar 2> /dev/null)" ]]; then shopt -s globstar
+        else echo 'Shell does not support globstar'; fi
+        : "${SUMMARY_FILE:=${GITHUB_STEP_SUMMARY}}"
         paths=(${{ inputs.path }}) # Expand globs, and trim whitespce.
-        gawk --file "$GITHUB_ACTION_PATH/summary.gawk" --sandbox -- "${paths[@]}" >> "$SUMMARY_FILE"
-        echo "summary-file=$SUMMARY_FILE" >> "$GITHUB_OUTPUT"
+        gawk --file "${GITHUB_ACTION_PATH}/summary.gawk" --sandbox -- "${paths[@]}" >> "${SUMMARY_FILE}"
+        echo "summary-file=${SUMMARY_FILE}" >> "${GITHUB_OUTPUT}"
       shell: bash
       env:
         SUMMARY_FILE: ${{ inputs.summary-file }}
