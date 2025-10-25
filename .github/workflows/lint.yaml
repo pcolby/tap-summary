@@ -17,7 +17,7 @@ jobs:
       - name: Check YAML files
         run: yamllint --strict .
       - name: Check run scripts
-        uses: pcolby/check-run-scripts@v0.3
+        uses: pcolby/check-run-scripts@v1
         with:
           paths: |-
             ${{ github.workspace }}/.github/workflows
