@@ -19,7 +19,4 @@ jobs:
       - name: Check run scripts
         uses: pcolby/check-run-scripts@v1
         with:
-          paths: |-
-            ${{ github.workspace }}/.github/workflows
-            action.yaml
           external-variables: EXTRA_DIFF_ARGS
