@@ -5,6 +5,8 @@ name: Automatic Tests
 
 on: [push, pull_request]
 
+permissions: { }
+
 jobs:
   test-gawk:
     runs-on: ${{ matrix.os }}
