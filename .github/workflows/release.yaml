@@ -64,7 +64,7 @@ jobs:
           done
       - name: Update version tag/s
         run: |
-          tags=( )
+          tags=( ); : "${NEW_VERSION?unset}"
           [[ "${RELEASE_TYPE,,}" != 'patch' ]] || tags+=( "${NEW_VERSION%.*}" )
           [[ "${RELEASE_TYPE,,}" == 'major' ]] || tags+=( "${NEW_VERSION%%.*}" )
           for tagName in "${tags[@]}"; do
