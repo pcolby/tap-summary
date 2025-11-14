@@ -1,0 +1,80 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release-type:
+        description: Release type
+        required: true
+        type: choice
+        options:
+          - Major
+          - Minor
+          - Patch
+
+permissions:
+  contents: write
+
+env:
+  GH_REPO: ${{ github.repository }}
+  GH_TOKEN: ${{ github.token }}
+  RELEASE_TYPE: ${{ inputs.release-type }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  release:
+    name: Tag and draft release
+    if: github.actor == 'pcolby'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Determine new version
+        run: |
+          latestReleaseTagName=$(gh release view --json tagName --jq '.[]' || :)
+          if [[ -z "${latestReleaseTagName}" ]]; then
+            version=( 1 0 0 )
+          elif [[ ! "${latestReleaseTagName}" =~ ^v([0-9]+)\.([0-9]+)\.([0-9]+)$ ]]; then
+            echo "Invalid latest release tag name: ${latestReleaseTagName}"
+            exit 1
+          else
+            case "${RELEASE_TYPE,,}" in
+              major) version=( "$((BASH_REMATCH[1]+1))" 0 0 );;
+              minor) version=( "${BASH_REMATCH[1]}" "$((BASH_REMATCH[2]+1))" 0);;
+              patch) version=( "${BASH_REMATCH[1]}" "${BASH_REMATCH[2]}" "$((BASH_REMATCH[3]+1))" );;
+              *) echo "Invalid release type: ${RELEASE_TYPE}"; exit 2;;
+            esac
+          fi
+          printf -v newVersion '%s.' "${version[@]}"
+          tee -a "${GITHUB_ENV}" <<< "NEW_VERSION=v${newVersion%.}"
+      - name: Create version tag/s
+        run: |
+          tags=( "${NEW_VERSION?unset}" )
+          [[ "${RELEASE_TYPE,,}" == 'patch' ]] || tags+=( "${NEW_VERSION%.*}" )
+          [[ "${RELEASE_TYPE,,}" != 'major' ]] || tags+=( "${NEW_VERSION%%.*}" )
+          for tagName in "${tags[@]}"; do
+            tee -a "${GITHUB_STEP_SUMMARY}" <<< "Creating tag: ${tagName}"
+            gh api "repos/${GITHUB_REPOSITORY}/git/refs" \
+              --header 'Accept: application/vnd.github+json' \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              --method 'POST' \
+              --raw-field "ref=refs/tags/${tagName}" \
+              --raw-field "sha=${GITHUB_SHA}"
+          done
+      - name: Update version tag/s
+        run: |
+          tags=( )
+          [[ "${RELEASE_TYPE,,}" != 'patch' ]] || tags+=( "${NEW_VERSION%.*}" )
+          [[ "${RELEASE_TYPE,,}" == 'major' ]] || tags+=( "${NEW_VERSION%%.*}" )
+          for tagName in "${tags[@]}"; do
+            tee -a "${GITHUB_STEP_SUMMARY}" <<< "Updating tag: ${tagName}"
+            gh api "repos/${GITHUB_REPOSITORY}/git/refs/tags/${tagName}" \
+              --field 'force=true' \
+              --header 'Accept: application/vnd.github+json' \
+              --header 'X-GitHub-Api-Version: 2022-11-28' \
+              --method 'PATCH' \
+              --raw-field "sha=${GITHUB_SHA}"
+          done
+      - name: Draft release
+        run: gh release create "${NEW_VERSION?unset}" --draft --generate-notes --title "${NEW_VERSION}" --verify-tag
