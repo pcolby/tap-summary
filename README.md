@@ -1,7 +1,7 @@
 # TAP Summary
 
 [![Automatic Tests](https://github.com/pcolby/tap-summary/actions/workflows/test.yaml/badge.svg)](
-  https://github.com/pcolby/pcolby/tap-summary/actions/workflows/test.yaml)
+  https://github.com/pcolby/tap-summary/actions/workflows/test.yaml)
 [![Lint Checks](https://github.com/pcolby/tap-summary/actions/workflows/lint.yaml/badge.svg)](
   https://github.com/pcolby/tap-summary/actions/workflows/lint.yaml)
 [![CodeQL](https://github.com/pcolby/tap-summary/actions/workflows/github-code-scanning/codeql/badge.svg)](
