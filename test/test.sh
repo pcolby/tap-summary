@@ -17,6 +17,7 @@ while IFS= read -d '' -r dirName; do
   while IFS='' read -r file; do tapFiles+=("${file}"); done < <(find "${dirName}" -name '*.tap' -type f -d -print || :)
   gawk -f "${SOURCE_DIR}/../summary.gawk" --sandbox -- "${tapFiles[@]}" >| "${dirName}/observed.md"
   case "${OSTYPE}" in
+    cygwin)  diffOptions=(--color=auto --strip-trailing-cr --unified) ;; # Cygwin
     darwin*) diffOptions=(--unified) ;;                                  # macOS
     msys*)   diffOptions=(--color=auto --strip-trailing-cr --unified) ;; # Windows
     *)       diffOptions=(--color=auto --unified) ;;
