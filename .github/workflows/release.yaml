@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2022-2026 Paul Colby <git@colby.id.au>
+# SPDX-License-Identifier: MIT
+
 name: Release
 
 on:
